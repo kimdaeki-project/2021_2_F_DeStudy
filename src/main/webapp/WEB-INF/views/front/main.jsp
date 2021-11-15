@@ -9,7 +9,16 @@
 	</head>
 	
 	<body>
-		<h1>환영합니다!</h1>
-		${test}
+		<h1>메인 페이지</h1>
+		<ul>
+			<li>한눈에 보기</li>
+			<li>공지사항</li>
+			<li>의견</li>
+			<li>로그인</li>
+		</ul>
+		<ul>
+			<li>한국어</li>
+			<li>영어</li>
+		</ul>
 	</body>
 </html>
