@@ -14,20 +14,18 @@ public class HomeController {
 		return "main";
 	}
 	
-	@GetMapping("/lan")
-	public String choiceLan() {
-		return "lan";
+	@GetMapping("/ch1")
+	public String ch1() {
+		return "ch1";
 	}
 	
-	
-	
-	@GetMapping("/level")
-	public String choiceLev() {
-		return "level";
+	@GetMapping("/ch2")
+	public String ch2() {
+		return "ch2";
 	}
 	
-	@GetMapping("/tool")
-	public String choiceTool() {
-		return "tool";
+	@GetMapping("/ch3")
+	public String ch3() {
+		return "ch3";
 	}
 }
