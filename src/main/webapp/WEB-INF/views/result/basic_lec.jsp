@@ -13,22 +13,28 @@
 		<ul>
 		<li>
 			<p>
-			<img src="../images/boost.png">
-			<br><img src="../images/boostlec.png">
+				<a href="https://www.boostcourse.org/cs112" target="_blank">
+					<img src="../images/boost.png">
+					<br><img src="../images/boostlec.png">
+				</a>
 			</p>
 		</li>
 		<hr>
 		<li>
 			<p>
-			<img src="../images/codeit.png">
-			<br><img src="../images/codeitlec.png">
+				<a href="https://www.codeit.kr/courses/intro-to-computer" target="_blank">
+					<img src="../images/codeit.png">
+					<br><img src="../images/codeitlec.png">
+				</a>
 			</p>
 		</li>
 		<hr>
 		<li>
 			<p>
-			<img src="../images/fast.png">
-			<br><img src="../images/fastlec.png">
+				<a href="https://fastcampus.co.kr/dev_online_computer?utm_source=mobion&utm_medium=icover_f&utm_campaign=pc&utm_content=200728_pc_re" target="_blank">
+					<img src="../images/fast.png">
+					<br><img src="../images/fastlec.png">
+				</a>
 			</p>
 		</li>
 		</ul>
