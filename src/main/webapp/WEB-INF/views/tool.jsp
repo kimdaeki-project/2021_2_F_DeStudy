@@ -7,13 +7,14 @@
 <title>개발을 만나는 시간, 디공</title>
 </head>
 <body>
-	<h1>Q2.</h1>
-	<h3>난이도를 선택하세요.</h3>
+	<img src="./images/postit (1).png">
+	<h1>Q3.</h1>
+	<h3>어떤 공부방법이 편하신가요?</h3>
 	
 	<ul>
-		<li>초급</li>
-		<li>중급</li>
-		<li>상급</li>
+		<button><li>책</li></button>
+		<br><button><li>온라인 강좌</li></button>
+		<br><button><li>모두 좋아요</li></button>
 	</ul>
 </body>
 </html>
