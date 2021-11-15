@@ -14,13 +14,20 @@
 		<em>*순차적으로 검증 후 등록됩니다.</em>
 		</p>
 	</caption>
+	
+	<img src="../images/typing (1).jpg">
+	
 	<table aria-describedby="intro">
 		<tr>
-			<td>Number</td>
-			<td>Title</td>
-			<td>Writer</td>
-			<td>Date</td>
+			<td>번호</td>
+			<td>제목</td>
+			<td>작성자</td>
+			<td>날짜</td>
 		</tr>
 	</table>
+	
+	<form name="search">
+		Search <input type="text">
+	</form>
 </body>
 </html>
