@@ -7,7 +7,10 @@
 <title>의견</title>
 </head>
 <body>
-	<p id="intro">추천의견은 언제든지 환영합니다!</p>
+	<p id="intro">
+	추가의견은 언제든지 환영합니다!<br>
+	<em>*순차적으로 검증 후 등록됩니다.</em>
+	</p>
 	<table aria-describedby="intro">
 		<tr>
 			<td>Number</td>
