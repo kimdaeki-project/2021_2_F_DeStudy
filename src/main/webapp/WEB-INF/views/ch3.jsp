@@ -14,6 +14,7 @@
 	<ul>
 		<button><li>책</li></button>
 		<br><button><li>온라인 강좌</li></button>
+		<br><button><li>블로그 칼럼</li></button>
 	</ul>
 </body>
 </html>

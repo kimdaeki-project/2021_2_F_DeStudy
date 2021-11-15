@@ -13,7 +13,7 @@
 				<img src="./images/main.jpg">
 				<p>
 				개발학습의 모든 것<br>
-				서칭없이 디공에서 간편하게
+				서칭없이 디공에서 한번에
 				</p>
 				<button>시작하기</button>
 		</div>

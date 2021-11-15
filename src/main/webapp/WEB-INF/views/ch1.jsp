@@ -16,6 +16,7 @@
 		<br><button><li>HTML/CSS</li></button>
 		<br><button><li>Javascript</li></button>
 		<br><button><li>Java</li></button>
+		<br><button><li>SQL</li></button>
 	</ul>
 	
 </body>
