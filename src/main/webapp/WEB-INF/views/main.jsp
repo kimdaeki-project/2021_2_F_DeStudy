@@ -18,10 +18,6 @@
 					<li>의견</li>
 					<li>로그인</li>
 				</ul>
-				<ul>
-					<li>한국어</li>
-					<li>영어</li>
-				</ul>
 			</div>
 			
 			<div id="intro">
