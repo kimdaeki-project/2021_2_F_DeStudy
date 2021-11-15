@@ -13,8 +13,7 @@
 	
 	<ul>
 		<button><li>초급</li></button>
-		<br><button><li>중급</li></button>
-		<br><button><li>상급</li></button>
+		<br><button><li>중상급</li></button>
 	</ul>
 </body>
 </html>
