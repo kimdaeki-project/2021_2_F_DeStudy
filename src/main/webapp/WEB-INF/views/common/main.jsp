@@ -9,7 +9,7 @@
 	<style>
 		* {margin :0; padding: 0;}
 		#intro {text-align:center;}
-		h3 {font-size: 3em;}
+		h3 {font-size: 3em; letter-spacing: 0.05em;}
 	</style>
 	</head>
 	
