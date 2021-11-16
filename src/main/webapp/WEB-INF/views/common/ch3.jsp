@@ -9,6 +9,7 @@
 	* {margin :0; padding: 0;}
 	h1 {font-size: 4em;}
 	h3 {font-size: 3em;}
+	ul {list-style-type: none;}
 	</style>
 	</head>
 

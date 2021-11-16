@@ -6,10 +6,8 @@
 	<meta charset="UTF-8">
 	<title>개발을 만나는 시간, 디공</title>
 	<style>
-		a {
-			text-decoration:none;
-			color:black;
-		}
+		a {text-decoration:none;bcolor:black;}
+		ul {list-style-type: none;}
 	</style>
 	</head>
 	
