@@ -27,7 +27,7 @@
 	</table>
 	
 	<form name="search">
-		Search <input type="text">
+		Search <input type="search">
 	</form>
 </body>
 </html>
