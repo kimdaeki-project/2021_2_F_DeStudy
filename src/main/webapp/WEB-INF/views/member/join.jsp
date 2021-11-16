@@ -4,10 +4,14 @@
 <html>
 	<head>
 	<meta charset="UTF-8">
-	<title>Insert title here</title>
+	<title>회원가입 - 개발을 만나는 시간, 디공</title>
+	<style>
+		*{text-align: center;}
+	</style>
 	</head>
 
 	<body>
+		<%@ include file="../common/header.jsp"%>
 		<h1>환영합니다!</h1>
 		<img src="../images/welcome.jpg" width="50%" height="300">
 		

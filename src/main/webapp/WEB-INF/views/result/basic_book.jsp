@@ -4,7 +4,7 @@
 <html>
 	<head>
 	<meta charset="UTF-8">
-	<title>Insert title here</title>
+	<title>개발을 만나는 시간, 디공</title>
 	<style>
 		a {
 			text-decoration:none;
@@ -14,6 +14,7 @@
 	</head>
 	
 	<body>
+		<%@ include file="../common/header.jsp"%>
 		<h1>컴퓨터공학의 기초를 다질 수 있는 책이예요!</h1>
 		<hr>
 		<div>

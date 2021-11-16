@@ -5,20 +5,27 @@
 <html>
 	<head>
 	<meta charset="UTF-8">
-	<title>디공</title>
+	<title>메인 페이지 - 개발을 만나는 시간, 디공</title>
+	<style>
+		* {margin :0; padding: 0;}
+		#intro {text-align:center;}
+		h3 {font-size: 3em;}
+	</style>
 	</head>
 	
 	<body>
+		<%@ include file="header.jsp"%>
 			<div id="intro">
 				<figure>
-					<img src="./images/main.jpg" alt="메인사진" width=100% height="1000">
+					<img src="../images/main.jpg" alt="메인사진" width=100% height="1000">
 					<figcaption>수많은 정보의 홍수 속에서 지친 당신에게,</figcaption>
 				</figure>
-				<p>
+				<h3>
 				개발학습의 모든 것<br>
-				한 번의 클릭으로 디공에서
-				</p>
+				단 한 번의 클릭으로 디공에서
+				</h3>
 				<button>시작하기</button>
-		</div>
+			</div>
+		<%@ include file="footer.jsp"%>
 	</body>
 </html>
