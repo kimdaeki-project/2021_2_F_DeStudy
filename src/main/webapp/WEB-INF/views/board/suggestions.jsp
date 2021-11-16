@@ -26,8 +26,9 @@
 		</tr>
 	</table>
 	
-	<form name="search">
-		Search <input type="search">
+	<form name="search" action="search">
+		<input type="search">
+		<input type="submit" value="검색">
 	</form>
 </body>
 </html>

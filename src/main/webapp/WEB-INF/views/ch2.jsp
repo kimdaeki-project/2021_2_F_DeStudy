@@ -12,8 +12,10 @@
 	<h3>난이도를 선택하세요.</h3>
 	
 	<ul>
-		<button><li>초급</li></button>
-		<br><button><li>중상급</li></button>
+		<button type="submit"><li>초급</li></button>
+		<br><button type="submit"><li>중상급</li></button>
 	</ul>
+	
+	2/3<progress value="60" max="90"></progress>
 </body>
 </html>

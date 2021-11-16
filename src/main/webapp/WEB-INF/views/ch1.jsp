@@ -13,11 +13,13 @@
 	
 	<ul>
 		<button><li>컴퓨터공학 기초</li></button>
-		<br><button><li>HTML/CSS</li></button>
-		<br><button><li>Javascript</li></button>
-		<br><button><li>Java</li></button>
-		<br><button><li>SQL</li></button>
+		<br><button type="submit"><li>HTML/CSS</li></button>
+		<br><button type="submit"><li>Javascript</li></button>
+		<br><button type="submit"><li>Java</li></button>
+		<br><button type="submit"><li>SQL</li></button>
 	</ul>
+	
+	1/3<progress value="30" max="90"></progress>
 	
 </body>
 </html>

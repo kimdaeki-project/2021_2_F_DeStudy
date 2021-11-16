@@ -12,9 +12,11 @@
 	<h3>어떤 공부방법이 편하신가요?</h3>
 	
 	<ul>
-		<button><li>책</li></button>
-		<br><button><li>온라인 강좌</li></button>
-		<br><button><li>블로그 칼럼</li></button>
+		<button type="submit"><li>책</li></button>
+		<br><button type="submit"><li>온라인 강좌</li></button>
+		<br><button type="submit"><li>블로그 칼럼</li></button>
 	</ul>
+	
+	3/3<progress value="90" max="90"></progress>
 </body>
 </html>
