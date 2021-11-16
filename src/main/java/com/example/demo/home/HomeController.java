@@ -10,8 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
 	
 	@RequestMapping("main")
-	public String test() {
-		System.out.println("test");
+	public String main() {
 		return "common/main";
 	}
 	
