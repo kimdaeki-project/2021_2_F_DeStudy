@@ -6,26 +6,27 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping("/common/**")
 public class HomeController {
 	
-	@RequestMapping("/main")
-	public String test(Model model) {
+	@RequestMapping("main")
+	public String test() {
 		System.out.println("test");
-		return "main";
+		return "common/main";
 	}
 	
-	@GetMapping("/ch1")
+	@GetMapping("ch1")
 	public String ch1() {
-		return "ch1";
+		return "common/ch1";
 	}
 	
-	@GetMapping("/ch2")
+	@GetMapping("ch2")
 	public String ch2() {
-		return "ch2";
+		return "common/ch2";
 	}
 	
-	@GetMapping("/ch3")
+	@GetMapping("ch3")
 	public String ch3() {
-		return "ch3";
+		return "common/ch3";
 	}
 }
