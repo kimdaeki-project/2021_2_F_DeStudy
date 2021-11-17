@@ -17,7 +17,7 @@
 		<%@ include file="header.jsp"%>
 			<div id="intro">
 				<figure>
-					<img src="../images/main.jpg" alt="메인사진" width=100% height="1000">
+					<img src="../images/main.jpg" id="main" alt="메인사진" width=100% height="1000">
 					<figcaption>수많은 정보의 홍수 속에서 지친 당신,</figcaption>
 				</figure>
 				<h3>
