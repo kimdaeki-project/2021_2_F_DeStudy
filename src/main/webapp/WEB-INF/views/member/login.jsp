@@ -13,7 +13,7 @@
 	<body>
 		<%@ include file="../common/header.jsp"%>
 		<figure>
-			<img src="../images/logo.png" width="250" height="250">
+			<img src="../images/logo.png" id="logo" width="250" height="250">
 			<figcaption>개발을 만나는 시간, 디공</figcaption>
 		</figure>
 		
