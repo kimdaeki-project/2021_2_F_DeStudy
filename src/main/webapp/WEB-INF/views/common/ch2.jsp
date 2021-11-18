@@ -17,7 +17,7 @@
 	#stick {display: block; margin: 30px 0 0 0;}
 	button {margin: 20px 0 0 0; width: 250px; height: 60px; border-radius: 10px; border: 0; background-color: DarkSeaGreen; text-align: center; font-size: 20px;}
 	button:hover{cursor: pointer; color: #ffffff; background-color: #000000;}
-	#paging {text-align: center;}
+/* 	#paging {text-align: center; margin: 200px 0 5% 0;} */
 	</style>
 	</head>
 
@@ -37,9 +37,9 @@
 					<button type="submit">초급</button>
 					<br><button type="submit">중상급</button>
 				</section>
-			</section>
-			<section id="paging">
+<!-- 				<section id="paging">
 					<a href="ch1">이전</a>
+				</section> -->
 			</section>
 		</div>
 	</body>

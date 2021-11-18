@@ -17,6 +17,7 @@
 	#stick {display: block; margin: 30px 0 0 0;}
 	button {margin: 20px 0 0 0; width: 250px; height: 60px; border-radius: 10px; border: 0; background-color: Pink; text-align: center; font-size: 20px;}
 	button:hover{cursor: pointer; color: #ffffff; background-color: #000000;}
+/* 	#paging {text-align: center; margin: 200px 0 5% 0;} */
 	</style>
 	</head>
 
@@ -36,6 +37,9 @@
 					<button type="submit">기본서</button>
 					<br><button type="submit">온라인 강의</button>
 				</section>
+<!-- 				<section id="paging">
+					<a href="ch1">처음으로</a>
+				</section> -->
 			</section>
 		</div>
 	</body>
