@@ -17,7 +17,7 @@
 		}
 		#main {text-align: center;}
 		#font {margin: 170px 0 0 0; font-size: 4em; letter-spacing: 0.05em;}
-		.btn {margin: 50px 0; width: 180px; height: 70px; border-radius: 40px; border-style: 1px solid white; font-size: 20px;}
+		.btn {margin: 50px 0; width: 180px; height: 70px; border-radius: 40px; border: 0; background-color: #ffffff; font-size: 20px;}
 		.btn:hover {cursor: pointer; color: #ffffff; background-color: #000000;}
 	</style>
 	<!--[if lt IE 9]>
