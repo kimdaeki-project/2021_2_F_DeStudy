@@ -14,11 +14,6 @@ public class HomeController {
 		return "common/main";
 	}
 	
-	@RequestMapping("intro")
-	public String intro() {
-		return "common/intro";
-	}
-	
 	@GetMapping("ch1")
 	public String ch1() {
 		return "common/ch1";
