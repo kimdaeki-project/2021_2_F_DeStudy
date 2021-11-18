@@ -8,9 +8,10 @@
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 		* {margin :0; padding: 0; font-family: 'Noto Sans KR', 돋움;}
-		#inner-nav{box-sizing: border-box; width: 70%; height: 20px; margin: 0 auto;}
-		#logo {float: left; display: inline-block; margin: 20px;}
-		li {list-style-type: none; display: inline-block; margin: 20px; float: right;}
+		#nav {margin: 20px 0; width: 100%; display: block;}
+		#inner-nav{margin: 20px auto; width: 70%; height: 24px;}
+		#logo {float: left; display: inline-block;}
+		li {list-style-type: none; display: inline-block; margin: 0 20px; float: right;}
 	</style>
 	<script type="text/javascript">
 		function notice() {
