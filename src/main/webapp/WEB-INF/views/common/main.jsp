@@ -17,7 +17,8 @@
 		}
 		#main {text-align: center;}
 		#font {margin: 170px 0 0 0; font-size: 4em; letter-spacing: 0.05em;}
-		#button {margin: 50px 0;}
+		.btn {margin: 50px 0; width: 180px; height: 70px; border-radius: 40px; border-style: 1px solid white; font-size: 20px;}
+		.btn:hover {cursor: pointer; color: #ffffff; background-color: #000000;}
 	</style>
 	<!--[if lt IE 9]>
 	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -31,7 +32,7 @@
 				개발학습의 모든 것<br>
 				디공에서 간편하게
 				</h3>
-				<button id="button">시작하기</button>
+				<button class="btn">시작하기</button>
 			</section>
 		<%@ include file="footer.jsp"%>
 	</body>
