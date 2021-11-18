@@ -11,21 +11,26 @@
 		#intro {text-align:center;}
 		h3 {font-size: 3em; letter-spacing: 0.05em;}
 	</style>
+	<!--[if lt IE 9]>
+	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+	<![endif]-->
 	</head>
 	
 	<body>
 		<%@ include file="header.jsp"%>
-			<div id="intro">
-				<figure>
-					<img src="../images/main.jpg" id="main" alt="메인사진" width=100% height="1000">
-					<figcaption>수많은 정보의 홍수 속에서 지친 당신,</figcaption>
-				</figure>
-				<h3>
-				개발학습의 모든 것<br>
-				디공에서 간편하게
-				</h3>
-				<button>시작하기</button>
-			</div>
+			<section>
+				<div id="intro">
+					<figure>
+						<img src="../images/main.jpg" id="main" alt="메인사진" width=100% height="1000">
+						<figcaption>수많은 정보의 홍수 속에서 지친 당신,</figcaption>
+					</figure>
+					<h3>
+					개발학습의 모든 것<br>
+					디공에서 간편하게
+					</h3>
+					<button>시작하기</button>
+				</div>
+			</section>
 		<%@ include file="footer.jsp"%>
 	</body>
 </html>
