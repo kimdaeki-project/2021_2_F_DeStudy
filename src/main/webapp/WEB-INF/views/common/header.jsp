@@ -12,7 +12,7 @@
 		#nav {margin: 20px 0; width: 100%; display: block;}
 		#inner-nav{margin: 20px auto; width: 70%; height: 24px;}
 		#logo {float: left; display: inline-block;}
-		li {list-style-type: none; display: inline-block; margin: 0 20px; float: right;}
+		#menu > li {list-style-type: none; display: inline-block; margin: 0 20px; float: right;}
 	</style>
 	<script type="text/javascript">
 		function notice() {
@@ -27,7 +27,7 @@
 				<div id="logo">
 					<a href="../common/main"><img src="../images/logo.png" width="20" height="20">디공</a>
 				</div>
-				<ul>
+				<ul id="menu">
 					<li id="login">로그인</li>
 					<li id="comment">의견</li>
 					<li id="notice" onClick="notice();">공지사항</li>
