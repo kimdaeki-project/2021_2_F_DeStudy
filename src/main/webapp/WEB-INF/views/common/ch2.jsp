@@ -35,7 +35,8 @@
 				</section>
 				<section id="anbox">
 					<button type="submit">초급</button>
-					<br><button type="submit">중상급</button>
+					<br><button type="submit">중급</button>
+					<br><button type="submit">상급</button>
 				</section>
 <!-- 				<section id="paging">
 					<a href="ch1">이전</a>

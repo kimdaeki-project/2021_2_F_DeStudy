@@ -36,6 +36,7 @@
 				<section id="anbox">
 					<button type="submit">기본서</button>
 					<br><button type="submit">온라인 강의</button>
+					<br><button type="submit">요약본</button>
 				</section>
 <!-- 				<section id="paging">
 					<a href="ch1">처음으로</a>
