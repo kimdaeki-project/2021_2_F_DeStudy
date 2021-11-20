@@ -21,9 +21,16 @@ h6 {font-size: 1.5em;}
 .menulist button:hover {cursor: pointer; color: #ffffff; background-color: #000000;}
 .ready {color: Gainsboro; pointer-events: none;}
 #hidbtn {visibility: hidden;}
-.bbwrap {width: 70%; height: 300px; margin: 70px auto;}
+
+.bbwrap {width: 70%; height: 500px; margin: 70px auto;}
 .bbtitle {width: 70%; height: 60px; margin: 15px 0;}
 .bbtitle span {color: Bisque;}
 .bblist > li {display: inline-block;}
-.bblist button {width: 300px; height: 400px; border-radius: 20px; border: 1px Bisque solid; background-color: White; font-size: 10px; box-sizing: border-box; margin: 0 10px; vertical-align: top;}
-.bblist img {width: 250px; height: 290px;}
+.bblist button {width: 300px; height: 400px; border-radius: 20px; border: 1px Bisque solid; background-color: White; font-size: 10px; box-sizing: border-box; margin: 0 10px; vertical-align: top; position: relative;}
+.hidden {width: 100px; height: 200px; margin-left: 85px; text-align: center; vertical-align: middle; position: absolute; z-index: 1;}
+.bblist h6 {position: absolute; z-index: 2; bottom: 40px; right: 10px; left: 10px;}
+.bblist img {position: absolute; z-index: 2; top: 35px; left: 25px;}
+
+.blwrap {width: 70%; height: 300px; margin: 70px auto;}
+.bltitle {width: 70%; height: 60px; margin: 15px 0;}
+.bltitle span {color: Bisque;}
