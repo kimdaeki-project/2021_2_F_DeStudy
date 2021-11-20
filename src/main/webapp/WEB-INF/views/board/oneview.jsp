@@ -27,6 +27,31 @@
 					<li><button class="ready">준비중</button></li>
 				</ul>
 			</div>
+			<section class="bbwrap">
+				<div class="bbtitle">
+					<h5>컴퓨터공학 기초 <span>기본서</span></h5>
+				</div>
+				<ul class="bblist">
+					<li>
+						<button>
+							<img src="../images/컴퓨터과학.jpg" alt="책사진">
+							<br><h6>한 권으로 그리는 컴퓨터과학 로드맵</h6>
+						</button>
+					</li>
+					<li>
+						<button>
+							<img src="../images/기초튼튼.png" alt="책사진">
+							<br><h6>다 함께 프로그래밍</h6>
+						</button>
+					</li>
+					<li>
+						<button>
+							<img src="../images/한권으로읽는컴퓨터.jpg" alt="책사진">
+							<br><h6>한 권으로 읽는 컴퓨터 구조와 프로그래밍</h6>
+						</button>
+					</li>
+				</ul>
+			</section>
 		</div>
 	</body>
 </html>
