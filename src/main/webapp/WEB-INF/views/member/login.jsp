@@ -13,7 +13,8 @@
 		#intro {width: 60%; margin: 0 auto; box-sizing: border-box; padding: 100px 0 50px 0;}
 		#title {margin: 10px 0;}
 		#login {width: 25%; margin: 0 auto;}
-		.block {width: 40%; height: 50px;}
+		#loginimg {margin: 20px 0;}
+		.block {width: 40%; height: 70px;}
 		.cblock {width: 40%; height: 10px;}
 	</style>
 	</head>
@@ -37,8 +38,7 @@
 							아이디 : <input type="text" name="user_id" required autofocus required><br>
 							<div class="cblock"></div>
 							비밀번호 : <input type="password" name="user_pw" required><br>
-							<input type="image" src="../images/login.png" alt="로그인" width="100" height="90" onClick="">
-							<div class="block"></div>
+							<input type="image" id="loginimg" src="../images/login.png" alt="로그인" width="100" height="90" onClick="">
 					</fieldset>
 				</form>
 			</section>
