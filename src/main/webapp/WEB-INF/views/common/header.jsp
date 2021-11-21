@@ -28,10 +28,10 @@
 					<a href="../common/main"><img src="../images/logo.png" width="20" height="20">디공</a>
 				</div>
 				<ul id="menu">
-					<li id="login">로그인</li>
-					<li id="comment">의견</li>
-					<li id="notice" onClick="notice();">공지사항</li>
-					<li id="one" onClick="">한눈에보기</li>
+					<li>로그인</li>
+					<li>의견</li>
+					<li onClick="notice();">공지사항</li>
+					<li onClick="">한눈에보기</li>
 				</ul>
 			</div>
 		</div>
