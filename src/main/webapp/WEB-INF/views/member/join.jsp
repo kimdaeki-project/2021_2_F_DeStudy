@@ -12,7 +12,7 @@
 	h1 {font-size: 45px; display: inline-block; margin: 0 5px;}
 	h5 {color: grey; text-align: center; margin: 30px 0;}
 	span {color: rgb(98, 193, 58);}
-	#wrap {width: 32%; margin: 0 auto;}
+	#wrap {width: 30%; margin: 0 auto;}
 	#title {text-align: center; margin: 100px 0 40px 0;}
 	#text {text-align: center;}
 	#necessary {margin: 30px 10px;}
@@ -33,7 +33,6 @@
 
 			<form name="join" method="post" action="join" autocomplete="off" encType="utf-8">
 				<fieldset>
-					<legend id="text">필수입력</legend>
 						<div id="necessary">
 							아이디 : <input type="text" id="user_id" placeholder="4자이상" maxlength="15" required autofocus required>
 							<button id="duplicate">중복확인</button><br>
@@ -47,12 +46,8 @@
 											<option value="직접입력">직접입력</option>
 										</datalist>
 						</div>
-				</fieldset>
-				<div id="block"></div>
-				<fieldset>
-					<legend id="text">선택입력</legend>
 						<div id="unnecessary">
-							사이트를 알게 된 경로<br>
+							사이트를 알게 된 경로(선택)<br>
 							<label><input type="radio" name="cause" value="search">검색</label><br>
 							<label><input type="radio" name="cause" value="blog">블로그</label><br>
 							<label><input type="radio" name="cause" value="recom">지인추천</label><br>
