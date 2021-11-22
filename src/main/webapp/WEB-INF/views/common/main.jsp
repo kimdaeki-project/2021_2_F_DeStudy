@@ -5,7 +5,7 @@
 <html>
 	<head>
 	<meta charset="UTF-8">
-	<title>메인 페이지 - 개발을 만나는 시간, 디공</title>
+	<title>메인 - 개발을 만나는 시간, 디공</title>
 	<style>
 		html {height: 100%;}
 		body
@@ -15,7 +15,7 @@
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
-		#main {text-align: center;}
+		#main {text-align: center; height: 550px;}
 		#font {margin: 170px 0 0 0; font-size: 4em; letter-spacing: 0.05em;}
 		.btn {margin: 50px 0; width: 180px; height: 70px; border-radius: 40px; border: 0; background-color: #ffffff; font-size: 20px;}
 		.btn:hover {cursor: pointer; color: #ffffff; background-color: #000000;}
