@@ -1,18 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 	<head>
 	<meta charset="UTF-8">
 	<title>로그인 - 개발을 만나는 시간, 디공</title>
 	<style>
-		*{text-align: center;}
 		html, body{width: 100%; height: 100%;}
 		h4 {font-size: 20px;}
-		#wrap {border-top: 1px solid Gainsboro; width: 100%;}
+		#loginwrap {border-top: 1px solid Gainsboro; width: 100%; text-align: center;}
 		#intro {width: 60%; margin: 0 auto; box-sizing: border-box; padding: 70px 0 20px 0;}
 		#title {margin: 10px 0;}
-		#login {width: 25%; margin: 0 auto;}
+		#login {width: 25%; margin: 0 auto; padding: 0 0 100px 0;}
 		#user_id {text-align: left;}
 		#user_pw {text-align: left;}
 		#loginimg {margin: 20px 0;}
@@ -23,7 +23,7 @@
 
 	<body>
 		<%@ include file="../common/header.jsp"%>
-		<div id="wrap">
+		<div id="loginwrap">
 			<section id="intro">
 				<figure>
 					<img src="../images/logo.png" width="250" height="250">
@@ -45,5 +45,6 @@
 				</form>
 			</section>
 		</div>
+		<%@ include file="../common/footer.jsp"%>
 	</body>
 </html>
