@@ -8,6 +8,7 @@
 	<title>로그인 - 개발을 만나는 시간, 디공</title>
 	<style>
 		html, body{width: 100%; height: 100%;}
+		a {text-decoration:none;}
 		h4 {font-size: 20px;}
 		#loginwrap {border-top: 1px solid Gainsboro; width: 100%; text-align: center;}
 		#intro {width: 60%; margin: 0 auto; box-sizing: border-box; padding: 70px 0 20px 0;}
@@ -15,9 +16,10 @@
 		#login {width: 25%; margin: 0 auto; padding: 0 0 100px 0;}
 		#user_id {text-align: left;}
 		#user_pw {text-align: left;}
-		#loginimg {margin: 20px 0;}
+		#loginimg {margin: 20px 0; display: inline-block;}
 		.block {width: 40%; height: 70px;}
 		.cblock {width: 40%; height: 10px;}
+		#signup {color: blue;}
 	</style>
 	</head>
 
@@ -33,16 +35,19 @@
 			</section>
 		
 			<section id="login">
-				<form name="login" method="post" action="login" autocomplete="off" encType="utf-8">
-					<fieldset>
+				<fieldset>
 						<legend>로그인</legend>
-							<div class="block"></div>
-							아이디 : <input type="text" id="user_id" required autofocus required><br>
-							<div class="cblock"></div>
-							비밀번호 : <input type="password" id="user_pw" required><br>
-							<input type="image" id="loginimg" src="../images/login.png" alt="로그인" width="100" height="90" onClick="">
-					</fieldset>
-				</form>
+							<form name="login" method="post" action="login" autocomplete="off" encType="utf-8">
+								<div class="block"></div>
+								아이디 : <input type="text" id="user_id" required autofocus required><br>
+								<div class="cblock"></div>
+								비밀번호 : <input type="password" id="user_pw" required><br>
+								<input type="image" id="loginimg" src="../images/login.png" alt="로그인" width="100" height="90" onClick="">
+							</form>
+						<a href="./join" id="signup">회원가입</a>
+						<div class="cblock"></div>
+				</fieldset>
+				
 			</section>
 		</div>
 		<%@ include file="../common/footer.jsp"%>
