@@ -18,4 +18,9 @@ public class BoardController {
 	public String oneview() {
 		return "board/oneview";
 	}
+	
+	@GetMapping("notice")
+	public String notice() {
+		return "board/notice";
+	}
 }
