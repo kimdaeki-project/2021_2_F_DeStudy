@@ -11,7 +11,7 @@
 	body {background-color: GhostWhite;}
 	h1 {font-size: 45px; display: inline-block; margin: 0 5px;}
 	h5 {color: grey; text-align: center; margin: 30px 0;}
-	span {color: rgb(98, 193, 58);}
+	span {color: grey;}
 	#wrap {width: 30%; margin: 0 auto;}
 	#title {text-align: center; margin: 100px 0 40px 0;}
 	#text {text-align: center;}
@@ -19,8 +19,8 @@
 	#unnecessary {margin: 30px 10px;}
 	#duplicate {background-color: GhostWhite;}
 	#block {widht: 100%; height: 15px;}
-	#signup {width: 60%; height: 60px; margin: 20px 20%; background-color: rgb(98, 193, 58); border: 0; color: white; font-size: 1.5em;}
-	#signup:hover{cursor: pointer; color: #ffffff; background-color: Gainsboro;}
+	#signup {width: 60%; height: 60px; margin: 20px 20%; background-color: Gainsboro; border: 0; color: white; font-size: 1.5em;}
+	#signup:hover{cursor: pointer; color: #ffffff; background-color: #000000;}
 	</style>
 	</head>
 
@@ -32,7 +32,6 @@
 			</section>
 
 			<form name="join" method="post" action="join" autocomplete="off" encType="utf-8">
-				<fieldset>
 						<div id="necessary">
 							아이디 : <input type="text" id="user_id" placeholder="4자이상" maxlength="15" required autofocus required>
 							<button id="duplicate">중복확인</button><br>
@@ -53,7 +52,6 @@
 							<label><input type="radio" name="cause" value="recom">지인추천</label><br>
 							<label><input type="radio" name="cause" value="recom">기타 : <input type="text" id="cause"></label>
 						</div>
-				</fieldset>
 				<input type="submit" id="signup" value="회원가입">
 			</form>
 			
