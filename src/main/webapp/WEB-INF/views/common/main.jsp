@@ -20,6 +20,7 @@
 		.btn {margin: 50px 0; width: 180px; height: 70px; border-radius: 40px; border: 0; background-color: #ffffff; font-size: 20px;}
 		.btn:hover {cursor: pointer; color: #ffffff; background-color: #000000;}
 	</style>
+	<!-- 시맨틱태그 지원 -->
 	<!--[if lt IE 9]>
 	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
 	<![endif]-->
@@ -32,7 +33,7 @@
 				개발학습의 모든 것<br>
 				디공에서 간편하게
 				</h3>
-				<button class="btn">시작하기</button>
+				<a href="ch1"><button class="btn">시작하기</button></a>
 			</section>
 		<%@ include file="footer.jsp"%>
 	</body>
