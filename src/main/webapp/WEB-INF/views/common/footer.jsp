@@ -18,7 +18,7 @@
 	
 	<body>
 		<div id="footerbox">
-			<section id="footer">
+			<footer id="footer">
 				<h5 id="footertitle">디공</h5>
 				<ul>
 					<a href=""><li>서비스 이용약관　| </li></a>
@@ -26,7 +26,7 @@
 					<a href=""><li>개인정보 처리방침</li></a>
 				</ul>
 				<div id="copyright">Copyright ⓒ MH All right reserved.</div>
-			</section>
+			</footer>
 		</div>
 	</body>
 </html>
