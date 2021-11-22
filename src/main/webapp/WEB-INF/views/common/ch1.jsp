@@ -27,7 +27,7 @@
 				<section id="qbox">
 					<img src="../images/postit (2).png" width="100" height="100">
 					<h1>Q1.</h1>
-					<h3>학습할 언어를 선택하세요.</h3>
+					<h3>학습할 과목을 선택하세요.</h3>
 					<section id="stick">
 						1/3<progress value="30" max="90"></progress>
 					</section>

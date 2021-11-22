@@ -15,7 +15,7 @@
 				<article id="rtitle">한눈에보기</article>
 			</div>
 			<section id="ovtitle">
-				<h4>추천 자료 <span>리스트</span></h4>
+				<h4><span>학습 과목</span></h4>
 			</section>
 			<div class="menuwrap">
 				<ul class="menulist">
