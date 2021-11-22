@@ -10,7 +10,7 @@
 		html, body{width: 100%; height: 100%;}
 		h4 {font-size: 20px;}
 		#wrap {border-top: 1px solid Gainsboro; width: 100%;}
-		#intro {width: 60%; margin: 0 auto; box-sizing: border-box; padding: 100px 0 50px 0;}
+		#intro {width: 60%; margin: 0 auto; box-sizing: border-box; padding: 70px 0 20px 0;}
 		#title {margin: 10px 0;}
 		#login {width: 25%; margin: 0 auto;}
 		#user_id {text-align: left;}
