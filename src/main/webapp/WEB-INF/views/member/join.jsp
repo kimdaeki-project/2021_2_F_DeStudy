@@ -10,7 +10,7 @@
 	html, body{width: 100%; height: 100%;}
 	body {background-color: GhostWhite;}
 	h1 {font-size: 45px; display: inline-block; margin: 0 5px;}
-	h5 {color: grey; text-align: center; margin: 40px 0;}
+	h5 {color: grey; text-align: center; margin: 30px 0;}
 	span {color: rgb(98, 193, 58);}
 	#wrap {width: 30%; margin: 0 auto;}
 	#title {text-align: center; margin: 100px 0 40px 0;}
