@@ -20,6 +20,7 @@
 	#duplicate {background-color: GhostWhite;}
 	#block {widht: 100%; height: 15px;}
 	#signup {width: 60%; height: 60px; margin: 20px 20%; background-color: rgb(98, 193, 58); border: 0; color: white; font-size: 1.5em;}
+	#signup:hover{cursor: pointer; color: #ffffff; background-color: Gainsboro;}
 	</style>
 	</head>
 
