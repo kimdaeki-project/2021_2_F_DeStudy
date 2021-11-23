@@ -16,11 +16,24 @@
 		#login {width: 25%; margin: 0 auto; padding: 0 0 100px 0;}
 		#user_id {text-align: left;}
 		#user_pw {text-align: left;}
+		#errorme {color: red; font-size: 11px; font-style: Italic;}
 		#loginimg {margin: 20px 0; display: inline-block;}
 		.block {width: 40%; height: 70px;}
 		.cblock {width: 40%; height: 10px;}
 		#signup {color: blue;}
 	</style>
+	<script type="text/javascript">
+	 	const member = '<%=session.getAttribute("member")%>';
+	 	const errorme = docoment.querySelectorId("#errorme");
+	 	
+	 	function wrongInfo() {
+	 		if(member == "null") {
+	 			errorme.classList.remove("hidden");	
+	 		}else {
+	 			
+	 		}
+	 	}
+	</script>
 	</head>
 
 	<body>
@@ -35,18 +48,26 @@
 			</section>
 		
 			<section id="login">
-				<fieldset>
-						<legend>로그인</legend>
-							<form name="login" method="post" action="login" autocomplete="off" encType="utf-8">
-								<div class="block"></div>
-								아이디 : <input type="text" id="user_id" name="id" required autofocus required><br>
+				<c:choose>
+					<c:when test="${empty member}">
+	
+					</c:when>
+				</c:choose>
+						<fieldset>
+								<legend>로그인</legend>
+									<form name="login" method="post" action="login" autocomplete="off" encType="utf-8">
+										<div class="block"></div>
+										아이디 : <input type="text" id="user_id" name="id" required autofocus required><br>
+										<div class="cblock"></div>
+										비밀번호 : <input type="password" id="user_pw" name="pw" required><br>
+										<h4 id="errorme" class="hidden">입력한 아이디 혹은 비밀번호가 일치하지 않습니다.</h4>
+										<input type="image" id="loginimg" src="../images/login.png" alt="로그인" width="100" height="90" onClick="wrongInfo();">
+									</form>
+								<a href="./join" id="signup">회원가입</a>
 								<div class="cblock"></div>
-								비밀번호 : <input type="password" id="user_pw" name="pw" required><br>
-								<input type="image" id="loginimg" src="../images/login.png" alt="로그인" width="100" height="90">
-							</form>
-						<a href="./join" id="signup">회원가입</a>
-						<div class="cblock"></div>
-				</fieldset>
+						</fieldset>
+				
+
 				
 			</section>
 		</div>

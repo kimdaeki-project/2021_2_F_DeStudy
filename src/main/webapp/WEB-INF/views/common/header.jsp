@@ -24,17 +24,17 @@
 					<a href="../common/main"><img src="../images/logo.png" width="20" height="20">디공</a>
 				</div>
 				<ul id="menu">
-				<c:choose>
-					<c:when test="${not empty member}">
+					<c:choose>
+						<c:when test="${not empty member}">
 							<li><a href="../member/login">로그아웃</a></li>
-					</c:when>
-					<c:otherwise>
+						</c:when>
+						<c:otherwise>
 							<li><a href="../member/login">로그인</a></li>
-					</c:otherwise>
-				</c:choose>
-							<li><a href="../board/suggestions">의견</a></li>
-							<li><a href="../board/notice">공지사항</a></li>
-							<li><a href="../board/oneview">한눈에보기</a></li>
+						</c:otherwise>
+					</c:choose>
+						<li><a href="../board/suggestions">의견</a></li>
+						<li><a href="../board/notice">공지사항</a></li>
+						<li><a href="../board/oneview">한눈에보기</a></li>
 				</ul>
 				
 			</div>
