@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -14,11 +15,6 @@
 		#logo {float: left; display: inline-block;}
 		#menu > li {list-style-type: none; display: inline-block; margin: 0 20px; float: right;}
 	</style>
-	<script type="text/javascript">
-		function notice() {
-
-		}
-	</script>
 	</head>
 
 	<body>
@@ -28,11 +24,19 @@
 					<a href="../common/main"><img src="../images/logo.png" width="20" height="20">디공</a>
 				</div>
 				<ul id="menu">
-					<li><a href="../member/login">로그인</a></li>
-					<li><a href="../board/suggestions">의견</a></li>
-					<li><a href="../board/notice">공지사항</a></li>
-					<li><a href="../board/oneview">한눈에보기</a></li>
+				<c:choose>
+					<c:when test="${not empty member}">
+							<li><a href="../member/login">로그아웃</a></li>
+					</c:when>
+					<c:otherwise>
+							<li><a href="../member/login">로그인</a></li>
+					</c:otherwise>
+				</c:choose>
+							<li><a href="../board/suggestions">의견</a></li>
+							<li><a href="../board/notice">공지사항</a></li>
+							<li><a href="../board/oneview">한눈에보기</a></li>
 				</ul>
+				
 			</div>
 		</div>
 	</body>

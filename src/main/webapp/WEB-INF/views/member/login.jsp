@@ -39,10 +39,10 @@
 						<legend>로그인</legend>
 							<form name="login" method="post" action="login" autocomplete="off" encType="utf-8">
 								<div class="block"></div>
-								아이디 : <input type="text" id="user_id" required autofocus required><br>
+								아이디 : <input type="text" id="user_id" name="id" required autofocus required><br>
 								<div class="cblock"></div>
-								비밀번호 : <input type="password" id="user_pw" required><br>
-								<input type="image" id="loginimg" src="../images/login.png" alt="로그인" width="100" height="90" onClick="">
+								비밀번호 : <input type="password" id="user_pw" name="pw" required><br>
+								<input type="image" id="loginimg" src="../images/login.png" alt="로그인" width="100" height="90">
 							</form>
 						<a href="./join" id="signup">회원가입</a>
 						<div class="cblock"></div>
