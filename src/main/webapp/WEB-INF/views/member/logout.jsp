@@ -5,8 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script type="text/javascript">
+	window.location.href="../common/main";
+</script>
 </head>
 <body>
-	<jsp:forward page="../common/main.jsp" />
+	<% session.removeAttribute("member"); %>
 </body>
 </html>

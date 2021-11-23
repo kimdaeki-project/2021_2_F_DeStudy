@@ -41,9 +41,9 @@ public class MemberController {
 	@PostMapping("logout")
 	public String logout(MemberVO memberVO, HttpSession session) throws Exception{
 		memberVO = memberService.getSelectOne(memberVO);
-		session.removeAttribute("member");
+		session.invalidate();
 		
-		return "redirect:../member/logout";
+		return "redirect:../common/main";
 	}
 	
 	
