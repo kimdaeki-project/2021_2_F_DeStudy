@@ -1,5 +1,7 @@
 package com.example.demo.member;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,11 +31,21 @@ public class MemberController {
 		//System.out.println(memberVO);
 		if(memberVO != null) {
 			session.setAttribute("member", memberVO);
-		}else {
-			session.setAttribute("member", memberVO);
-			return "member/login";
 		}
 		return "redirect:../common/main";
 	}
+	
+	@GetMapping("logout")
+	public void logout() throws Exception{}
+	
+	@PostMapping("logout")
+	public String logout(MemberVO memberVO, HttpSession session) throws Exception{
+		memberVO = memberService.getSelectOne(memberVO);
+		session.removeAttribute("member");
+		
+		return "redirect:../member/logout";
+	}
+	
+	
 
 }

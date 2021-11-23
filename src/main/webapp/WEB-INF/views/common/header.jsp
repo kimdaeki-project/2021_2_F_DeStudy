@@ -26,7 +26,7 @@
 				<ul id="menu">
 					<c:choose>
 						<c:when test="${not empty member}">
-							<li><a href="../member/login">로그아웃</a></li>
+							<li><a href="../member/logout">로그아웃</a></li>
 						</c:when>
 						<c:otherwise>
 							<li><a href="../member/login">로그인</a></li>
