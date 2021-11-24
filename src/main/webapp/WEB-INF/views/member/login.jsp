@@ -56,9 +56,6 @@
 								<a href="./join" id="signup">회원가입</a>
 								<div class="cblock"></div>
 						</fieldset>
-				
-
-				
 			</section>
 		</div>
 		<%@ include file="../common/footer.jsp"%>
