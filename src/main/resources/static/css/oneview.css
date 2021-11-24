@@ -26,9 +26,9 @@ h6 {font-size: 1.5em;}
 #bbtitle {width: 75%; height: 60px; margin: 15px 0;}
 #bbtitle span {color: Bisque;}
 .bblist > li {display: inline-block;}
-#button {width: 300px; height: 400px; background-color: white; border-radius: 20px; border: 1px Bisque solid; font-size: 10px; box-sizing: border-box; margin: 0 10px; vertical-align: top; position: relative;}
-#more {width: 200px; height: 200px; left: 50px; text-align: center; vertical-align: middle; position: absolute; z-index: 2; font-size: 10px;}
-#more > a {font-weight: bold;}
+.button {width: 300px; height: 400px; background-color: white; border-radius: 20px; border: 1px Bisque solid; font-size: 10px; box-sizing: border-box; margin: 0 10px; vertical-align: top; position: relative;}
+.more {width: 200px; height: 200px; left: 50px; text-align: center; vertical-align: middle; position: absolute; z-index: 2; font-size: 10px;}
+.more > a {font-weight: bold;}
 .opacity{opacity: 0.2;}
 .hidden {display: none;}
 .bblist h6 {position: absolute; z-index: 1; bottom: 40px; right: 10px; left: 10px;}

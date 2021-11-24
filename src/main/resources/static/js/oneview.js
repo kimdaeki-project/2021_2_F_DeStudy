@@ -1,36 +1,16 @@
-const more = document.querySelectorAll("#more");
-const contents = document.querySelectorAll("#contents");
-const button = document.querySelectorAll("#button");
+const more = document.querySelectorAll(".more");
+const contents = document.querySelectorAll(".contents");
+const button = document.querySelectorAll(".button");
+
+for(const i=0;i<button.length;i++){
+	button[i].addEventListener("mouseover", function(){
+			more[i].classList.remove("hidden");
+			contents[i].classList.add("opacity");
+		});
+	}
 
 
-button[0].addEventListener("mouseover", function(){
-		more[0].classList.remove("hidden");
-		contents[0].classList.add("opacity");
-});
-	
-button[0].addEventListener("mouseout", function(){
-		more[0].classList.add("hidden");
-		contents[0].classList.remove("opacity");
-});
-
-button[1].addEventListener("mouseover", function(){
-		more[1].classList.remove("hidden");
-		contents[1].classList.add("opacity");
-});
-	
-button[1].addEventListener("mouseout", function(){
-		more[1].classList.add("hidden");
-		contents[1].classList.remove("opacity");
-});
-
-button[2].addEventListener("mouseover", function(){
-		more[2].classList.remove("hidden");
-		contents[2].classList.add("opacity");
-});
-	
-button[2].addEventListener("mouseout", function(){
-		more[2].classList.add("hidden");
-		contents[2].classList.remove("opacity");
-});
-
-
+//button[i].addEventListener("mouseout", onOut);
+//for(i=0;i<more.length;i++){
+//more[i].classList.add("hidden");
+//contents[i].classList.remove("opacity");

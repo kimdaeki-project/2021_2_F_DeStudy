@@ -34,33 +34,33 @@
 				</div>
 				<ul class="bblist">
 					<li>
-						<button id="button">
-							<div id="more" class="hidden">
+						<button class="button">
+							<div class="more hidden">
 								<a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=141042179" target="_blank"><h5>더 알아보기</h5></a>
 							</div>
-							<article id="contents">
+							<article class="contents">
 								<img src="../images/컴퓨터과학.jpg" alt="책사진" width="250" height="290">
 								<br><h6>한 권으로 그리는 컴퓨터과학 로드맵</h6>
 							</article>
 						</button>
 					</li>
 					<li>
-						<button id="button">
-							<div id="more" class="hidden">
+						<button class="button">
+							<div class="more hidden">
 								<a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=83064510" target="_blank"><h5>더 알아보기</h5></a>
 							</div>
-							<article id="contents">
+							<article class="contents">
 								<img src="../images/기초튼튼.png" alt="책사진" width="250" height="290">
 								<br><h6>다 함께 프로그래밍</h6>
 							</article>
 						</button>
 					</li>
 					<li>
-						<button id="button">
-							<div id="more" class="hidden">
+						<button class="button">
+							<div class="more hidden">
 								<a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=268444562" target="_blank"><h5>더 알아보기</h5></a>
 							</div>
-							<article id="contents">
+							<article class="contents">
 								<img src="../images/한권으로읽는컴퓨터.jpg" alt="책사진" width="250" height="290">
 								<br><h6>한 권으로 읽는 컴퓨터 구조와 프로그래밍</h6>
 							</article>
