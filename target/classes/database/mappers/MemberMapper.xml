@@ -7,4 +7,9 @@
 		<select id="getSelectOne" parameterType="MemberVO" resultType="MemberVO">
 			select * from destudymember where id=#{id} and pw=#{pw}
 		</select>
+		
+		<insert id="setInsert" parameterType="MemberVO">
+			insert into destudymember (id, pw, email, cause)
+			values (#{id}, #{pw}, #{email}, #{cause})
+		</insert>
 	</mapper>

@@ -7,6 +7,7 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -14,14 +15,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/member/**")
 public class MemberController {
 	
+	//객체주입
 	@Autowired
 	private MemberService memberService;
 
-	@GetMapping("join")
-	public String join() {
-		return "member/join";
-	}
 	
+	//로그인
 	@GetMapping("login")
 	public void getSelectOne() throws Exception{}
 	
@@ -35,9 +34,23 @@ public class MemberController {
 		return "redirect:../common/main";
 	}
 	
+	
+	//로그아웃
 	@GetMapping("logout")
 	public String logout(HttpSession session) throws Exception{
 		session.invalidate();
 		return "redirect:../common/main";
+	}
+	
+	
+	//회원가입
+	@GetMapping("join")
+	public void setInsert() throws Exception{};
+	
+	@PostMapping("join")
+	public String setInsert(MemberVO memberVO) throws Exception{
+		memberService.setInsert(memberVO);
+//		System.out.println(result);
+		return "redirect:../member/login";
 	}
 }

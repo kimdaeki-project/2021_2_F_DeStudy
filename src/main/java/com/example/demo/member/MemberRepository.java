@@ -6,5 +6,9 @@ import org.springframework.stereotype.Repository;
 @Mapper
 public interface MemberRepository {
 	
+	//로그인
 	public MemberVO getSelectOne(MemberVO memberVO)throws Exception;
+
+	//회원가입
+	public int setInsert(MemberVO memberVO) throws Exception;
 }
