@@ -64,7 +64,7 @@
 							<label><input type="radio" name="cause" value="지인추천">지인추천</label><br>
 							<label><input type="radio" value="기타">기타 : <input type="text" id="cause" name="cause"></label>
 						</div>
-				<input type="submit" id="signup" value="회원가입" onClick="emailCheck();">
+				<input type="submit" id="signup" value="회원가입">
 			</form>
 			
 			<h5>Copyright ⓒ MH All right reserved.</h5>
