@@ -46,13 +46,14 @@
 							<h3>비밀번호</h3>
 							<input type="password" id="user_pw" name="pw" placeholder="특수문자포함, 10~12자리" required><br>
 							<h3>이메일</h3>
-								<input type="text" id="user_email" name="email" required><input type="text" name="email" id="email_address" list="user_email_address">
+								<input type="text" id="user_email" required><span id="middle">@</span><input type="text" id="email_address" list="user_email_address">
 								<datalist id="user_email_address">
 									<option value="직접입력"></option>
-									<option value="@naver.com"></option>
-									<option value="@daum.com"></option>
-									<option value="@google.com"></option>
+									<option value="naver.com"></option>
+									<option value="daum.com"></option>
+									<option value="google.com"></option>
 								</datalist>
+								<input type="hidden" id="totalemail" name="email">
 						</div>
 						<div id="unnecessary">
 							<h3>사이트를 알게 된 경로(선택)</h3>
