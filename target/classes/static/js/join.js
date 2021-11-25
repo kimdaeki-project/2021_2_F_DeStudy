@@ -8,7 +8,7 @@
 	});
 
 	function email() {
-		console.log('change');
+		//console.log('change');
 		const email = $("#user_email").val();
 		const middle = $("#middle").text();
 		const address = $("#email_address").val();
