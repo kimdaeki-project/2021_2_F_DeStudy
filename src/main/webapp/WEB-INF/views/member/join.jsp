@@ -24,11 +24,12 @@
 	#email_address {width: 40%; height: 50px;}
 	#cause {width: 100%; height: 50px;}
 	#unnecessary {margin: 30px 10px;}
-	#duplicate {background-color: GhostWhite; width: 15%; height: 40px;}
+	#overlappedID {background-color: GhostWhite; width: 15%; height: 40px;}
 	.block {widht: 100%; height: 15px;}
 	#signup {width: 60%; height: 60px; margin: 20px 20%; background-color: Gainsboro; border: 0; color: white; font-size: 1.5em;}
 	#signup:hover{cursor: pointer; color: #ffffff; background-color: #000000;}
 	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 
 	<body>
@@ -41,19 +42,20 @@
 			<form name="join" method="post" action="join" autocomplete="off" encType="utf-8">
 						<div id="necessary">
 							<h3>아이디</h3>
-							<input type="text" id="user_id" name="id" placeholder="4자이상" maxlength="15" required autofocus required>
-							<button id="duplicate">중복확인</button><br>
+							<input type="text" id="user_id" name="id" placeholder="4자이상" minlength="4" maxlength="15" required autofocus required>
+							<button id="overlappedID">중복확인</button><br>
+							<span id="olmessage"></span>
 							<h3>비밀번호</h3>
-							<input type="password" id="user_pw" name="pw" placeholder="특수문자포함, 10~12자리" required><br>
+							<input type="password" id="user_pw" name="pw" placeholder="특수문자포함, 10~12자리" minlength="10" maxlength="12" required><br>
 							<h3>이메일</h3>
 								<input type="text" id="user_email" required><span id="middle">@</span><input type="text" id="email_address" list="user_email_address">
 								<datalist id="user_email_address">
-									<option value="직접입력"></option>
 									<option value="naver.com"></option>
 									<option value="daum.com"></option>
 									<option value="google.com"></option>
+									<option value="직접입력"></option>
 								</datalist>
-								<input type="hidden" id="totalemail" name="email">
+								<input type="hidden" id="totalemail" name="email" value="">
 						</div>
 						<div id="unnecessary">
 							<h3>사이트를 알게 된 경로(선택)</h3>
@@ -62,11 +64,13 @@
 							<label><input type="radio" name="cause" value="지인추천">지인추천</label><br>
 							<label><input type="radio" value="기타">기타 : <input type="text" id="cause" name="cause"></label>
 						</div>
-				<input type="submit" id="signup" value="회원가입">
+				<input type="submit" id="signup" value="회원가입" onClick="emailCheck();">
 			</form>
 			
 			<h5>Copyright ⓒ MH All right reserved.</h5>
 			<div class="block"></div>
 		</div>
+		
+		<script type="text/javascript" src="/js/join.js"></script>
 	</body>
 </html>
