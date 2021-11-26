@@ -25,6 +25,7 @@
 	#cause {width: 100%; height: 50px;}
 	#unnecessary {margin: 30px 10px;}
 	#overlappedID {background-color: GhostWhite; width: 15%; height: 40px;}
+	#olmessage {color: red; font-style: Italic;}
 	.block {widht: 100%; height: 15px;}
 	#signup {width: 60%; height: 60px; margin: 20px 20%; background-color: Gainsboro; border: 0; color: white; font-size: 1.5em;}
 	#signup:hover{cursor: pointer; color: #ffffff; background-color: #000000;}
@@ -64,7 +65,7 @@
 							<label><input type="radio" name="cause" value="지인추천">지인추천</label><br>
 							<label><input type="radio" value="기타">기타 : <input type="text" id="cause" name="cause"></label>
 						</div>
-				<input type="submit" id="signup" value="회원가입">
+				<input type="submit" id="signup" value="회원가입" disabled>
 			</form>
 			
 			<h5>Copyright ⓒ MH All right reserved.</h5>

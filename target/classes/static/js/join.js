@@ -1,3 +1,4 @@
+	
 	//이메일주소 가져오기
 	$("#user_email").blur(function(){
 		email();	
@@ -17,20 +18,25 @@
 		}
 	};	
 
-//const id = $("#user_id").val();
-//const button = $("document").$("#overlappedID");
-	
-
-//	$.ajax({
-//	type: "post",
-//	async: false,
-//	url: "http://localhost:8080/member/join",
-//	data: {id: id},
-//	success: function (data, textStatus) {
-//	if(data == 'usable') {
-//		$('#olmessage').text("사용 가능한 ID 입니다.");
-//	}else {
-//		$('#olmessage').text("이미 사용중인 ID 입니다.");
-//	}
-//	}
-// });
+	//아이디 중복확인
+	const id = $("#user_id").val();
+	$("#overlappedID").click(function(){
+		$.ajax({
+		type: "get",
+		async: false,
+		url: "http://localhost:8080/member/idCheck?id="+id,
+		data: {id: id},
+		success: function (data) {
+		if(data == 0) {
+			$("#olmessage").text("이미 사용중인 ID 입니다.");
+			$("signup").attr("disabled", true);
+			}else {
+			$("#olmessage").text("사용 가능한 ID 입니다.");
+			$("signup").attr("disabled", false);
+			}
+			}
+		})
+		});
+		
+	//회원가입 활성화
+		

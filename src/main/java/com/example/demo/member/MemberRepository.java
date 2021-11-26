@@ -11,4 +11,7 @@ public interface MemberRepository {
 
 	//회원가입
 	public int setInsert(MemberVO memberVO) throws Exception;
+	
+	//아이디 중복확인
+	public int overlappedID(MemberVO memberVO) throws Exception;
 }
