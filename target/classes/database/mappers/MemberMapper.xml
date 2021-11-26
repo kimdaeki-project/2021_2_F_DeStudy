@@ -14,6 +14,6 @@
 		</insert>
 		
 		<select id="overlappedID" parameterType="MemberVO" resultType="int">
-			select count(*) From destudymember where id=#{id}
+			select count(id) From destudymember where id=#{id}
 		</select>
 	</mapper>

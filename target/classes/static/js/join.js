@@ -19,15 +19,15 @@
 	};	
 
 	//아이디 중복확인
-	const id = $("#user_id").val();
 	$("#overlappedID").click(function(){
+		const id = $("#user_id").val();
 		$.ajax({
 		type: "get",
-		async: false,
+		async: true,
 		url: "http://localhost:8080/member/idCheck?id="+id,
-		data: {id: id},
+		data: {param: id},
 		success: function (data) {
-		if(data == 0) {
+		if(data == 1) {
 			$("#olmessage").text("이미 사용중인 ID 입니다.");
 			$("signup").attr("disabled", true);
 			}else {
