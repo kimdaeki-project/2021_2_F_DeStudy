@@ -25,7 +25,8 @@
 	#cause {width: 100%; height: 50px;}
 	#unnecessary {margin: 30px 10px;}
 	#overlappedID {background-color: GhostWhite; width: 15%; height: 40px;}
-	#olmessage {color: red; font-style: Italic;}
+	.olmessagef {color: red; font-style: Italic;}
+	.olmessaget {color: blue; font-style: Italic;}
 	.block {widht: 100%; height: 15px;}
 	#signup {width: 60%; height: 60px; margin: 20px 20%; background-color: Gainsboro; border: 0; color: white; font-size: 1.5em;}
 	#signup:hover{cursor: pointer; color: #ffffff; background-color: #000000;}
@@ -44,7 +45,7 @@
 						<div id="necessary">
 							<h3>아이디</h3>
 							<input type="text" id="user_id" name="id" placeholder="4자이상" minlength="4" maxlength="15" required autofocus required>
-							<button id="overlappedID">중복확인</button><br>
+							<button id="overlappedID" type="button">중복확인</button><br>
 							<span id="olmessage"></span>
 							<h3>비밀번호</h3>
 							<input type="password" id="user_pw" name="pw" placeholder="특수문자포함, 10~12자리" minlength="10" maxlength="12" required><br>
@@ -65,7 +66,7 @@
 							<label><input type="radio" name="cause" value="지인추천">지인추천</label><br>
 							<label><input type="radio" value="기타">기타 : <input type="text" id="cause" name="cause"></label>
 						</div>
-				<input type="submit" id="signup" value="회원가입" disabled>
+				<input type="button" id="signup" value="회원가입">
 			</form>
 			
 			<h5>Copyright ⓒ MH All right reserved.</h5>
