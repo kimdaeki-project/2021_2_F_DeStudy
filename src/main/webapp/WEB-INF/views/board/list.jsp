@@ -29,7 +29,7 @@
 					  	<c:forEach items="${noticeList}" var="noticeVO">
 						    <tr>
 						      <th scope="row">${noticeVO.num}</th>
-						      <td>${noticeVO.title}</td>
+						      <td><a href="./select?num=${noticeVO.num}">${noticeVO.title}</a></td>
 							  <td>${noticeVO.writer}</td>
 							  <td>${noticeVO.hit}</td>
 							  <td>${noticeVO.date}</td>
@@ -39,5 +39,6 @@
 					</table>
 			</section>
 		</div>
+		<%@ include file="../common/footer.jsp"%>
 	</body>
 </html>

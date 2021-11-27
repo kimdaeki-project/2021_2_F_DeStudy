@@ -16,4 +16,8 @@ public class NoticeService {
 		List<NoticeVO> list = noticeRepository.getList(noticeVO);
 		return list;
 	};
+	
+	public NoticeVO getSelect(NoticeVO noticeVO) throws Exception {
+		return noticeRepository.getSelect(noticeVO);
+	}
 }

@@ -25,4 +25,13 @@ public class NoticeController {
 		mv.setViewName("board/list");
 		return mv;
 	}
+	
+	//글 조회
+	@GetMapping("select")
+	public ModelAndView getSelect(ModelAndView mv, NoticeVO noticeVO) throws Exception{
+		noticeVO = noticeService.getSelect(noticeVO);
+		mv.setViewName("board/select");
+		mv.addObject("noticeVO", noticeVO);
+		return mv;
+	}
 }
