@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
@@ -13,6 +13,7 @@
 	<script src="/js/summernote/summernote-lite.js"></script>
 	<script src="/js/summernote/lang/summernote-ko-KR.js"></script>
 	<script src="/js/insert.js"></script>
+	<c:import url="../temp/bootStrapCDN.jsp"></c:import>
 	</head>
 	
 	<body>
@@ -20,8 +21,20 @@
 		<div id="wrap">
 			<div id="main">
 				<div class="block"></div>
-				<div id="summernote">${noticeVO.contents}</div>
-				<button id="submit">작성완료</button>
+				<form:form modelAttribute="noticeVO">
+					<div id="title">
+						<label for="title" class="title">제목</label><br>
+						<form:input path="title" id="title"/>
+					</div>
+<%-- 					<div id="writer">
+						<form:input path="${noticeVO.writer}" id="writer" class="hidden"/>
+					</div> --%>
+					<div id="contents">
+						<label for="contents" class="contents">내용</label><br>
+						<form:input path="contents" id="summernote"/>
+					</div>
+					<button id="submit" type="submit" class="btn btn-secondary btn-lg">작성완료</button>
+				</form:form>
 				<div class="block"></div>
 			</div>
 		</div>
