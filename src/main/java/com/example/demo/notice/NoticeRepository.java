@@ -12,4 +12,7 @@ public interface NoticeRepository{
 
 	//글 조회
 	public NoticeVO getSelect(NoticeVO noticeVO) throws Exception;
+	
+	//글쓰기
+	public int setInsert(NoticeVO noticeVO) throws Exception;
 }

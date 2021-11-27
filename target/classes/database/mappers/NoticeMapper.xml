@@ -11,5 +11,10 @@
   	<select id="getSelect" parameterType="NoticeVO" resultType="NoticeVO">
   		select * from destudynotice where num=#{num}
   	</select>
+  	
+  	<insert id="setInsert" parameterType="NoticeVO" useGeneratedKeys="true" keyProperty="num">
+  		insert into destudynotice (num, title, contents, writer, hit, date)
+  		values (#{num}, #{title}, #{contents}, #{writer}, 0, now())
+  	</insert>
   </mapper>
   

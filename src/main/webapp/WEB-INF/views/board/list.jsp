@@ -7,6 +7,7 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>공지사항 - 개발을 만나는 시간, 디공</title>
+	<c:import url="../temp/bootStrapCDN.jsp"></c:import>
 	<link rel="stylesheet" href="/css/list.css">
 	</head>
 
@@ -37,8 +38,10 @@
 					    </c:forEach>
 					  </tbody>
 					</table>
+					<a href="./insert">글쓰기</a>
 			</section>
 		</div>
+		<div class="block"></div>
 		<%@ include file="../common/footer.jsp"%>
 	</body>
 </html>

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -34,4 +35,17 @@ public class NoticeController {
 		mv.addObject("noticeVO", noticeVO);
 		return mv;
 	}
+	
+	//글쓰기
+	@GetMapping("insert")
+	public String setInsert() throws Exception {
+		return "board/insert";
+	}
+	
+	@PostMapping("insert")
+	public String setInsert(NoticeVO noticeVO) throws Exception{
+		int result = noticeService.setInsert(noticeVO);
+		return "redirect:../board/list";
+	}
+	
 }
