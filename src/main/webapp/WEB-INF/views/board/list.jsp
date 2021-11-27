@@ -14,7 +14,7 @@
 		<%@ include file="../common/header.jsp"%>
 		<div id="wrap">
 			<section id="main">
-				<section id="title">공지사항</section>
+				<section id="maintitle">공지사항</section>
 					<table class="table">
 					  <thead>
 					    <tr id="sector">

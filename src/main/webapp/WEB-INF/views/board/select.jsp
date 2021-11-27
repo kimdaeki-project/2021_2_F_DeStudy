@@ -13,13 +13,14 @@
 		<%@ include file="../common/header.jsp"%>
 		<div id="wrap">
 			<section id="main">
-				<section id="title">공지사항</section>
+				<section id="maintitle">공지사항</section>
+					<article id="title">${noticeVO.title}</article>
+					<article id="date">${noticeVO.date}</article>
+					<article id="contents">${noticeVO.contents}</article>
+				
+					<a href="./list">돌아가기</a>
+					<div class="block"></div>
 			</section>
-			<h3>${noticeVO.title}</h3>
-			<h3>${noticeVO.writer}</h3>
-			<h3>${noticeVO.contents}</h3>
-			
-			<a href="./list">돌아가기</a>
 		</div>
 		<%@ include file="../common/footer.jsp"%>
 	</body>
