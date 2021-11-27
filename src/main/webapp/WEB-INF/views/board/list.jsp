@@ -38,7 +38,7 @@
 					    </c:forEach>
 					  </tbody>
 					</table>
-					<a href="./insert">글쓰기</a>
+					<a href="./insert" id="writing">글쓰기</a>
 			</section>
 		</div>
 		<div class="block"></div>
