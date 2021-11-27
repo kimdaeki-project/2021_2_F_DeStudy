@@ -33,7 +33,7 @@
 						</c:otherwise>
 					</c:choose>
 						<li><a href="../board/suggestions">의견</a></li>
-						<li><a href="../board/notice">공지사항</a></li>
+						<li><a href="../board/list">공지사항</a></li>
 						<li><a href="../board/oneview">한눈에보기</a></li>
 				</ul>
 				

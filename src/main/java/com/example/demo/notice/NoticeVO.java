@@ -1,8 +1,8 @@
-package com.example.demo.board;
+package com.example.demo.notice;
 
 import java.sql.Date;
 
-public class BoardVO {
+public class NoticeVO {
 	private int num;
 	private String title;
 	private String contents;
@@ -46,4 +46,7 @@ public class BoardVO {
 	public void setDate(Date date) {
 		this.date = date;
 	}
+	
+	
+
 }
