@@ -23,14 +23,13 @@
 				<div class="block"></div>
 				<form:form modelAttribute="noticeVO">
 					<div id="title">
-						<label for="title" class="title">제목</label><br>
-						<form:input path="title" id="title"/>
+						<form:input path="title" id="title" placeholder="제목을 입력하세요"/>
 					</div>
 <%-- 					<div id="writer">
 						<form:input path="${noticeVO.writer}" id="writer" class="hidden"/>
 					</div> --%>
 					<div id="contents">
-						<label for="contents" class="contents">내용</label><br>
+						<!-- <label for="contents" class="contents">내용</label><br> -->
 						<form:input path="contents" id="summernote"/>
 					</div>
 					<button id="submit" type="submit" class="btn btn-secondary btn-lg">작성완료</button>
