@@ -15,4 +15,7 @@ public interface NoticeRepository{
 	
 	//글쓰기
 	public int setInsert(NoticeVO noticeVO) throws Exception;
+	
+	//글 수정하기
+	public int setUpdate(NoticeVO noticeVO) throws Exception;
 }

@@ -28,4 +28,9 @@ public class NoticeService {
 		int result = noticeRepository.setInsert(noticeVO);
 		return result;
 	}
+	
+	//글 수정하기
+	public int setUpdate(NoticeVO noticeVO) throws Exception {
+		return noticeRepository.setUpdate(noticeVO);
+	}
 }
