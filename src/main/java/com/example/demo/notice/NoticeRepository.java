@@ -18,4 +18,7 @@ public interface NoticeRepository{
 	
 	//글 수정하기
 	public int setUpdate(NoticeVO noticeVO) throws Exception;
+	
+	//글 삭제하기
+	public int setDelete(NoticeVO noticeVO) throws Exception;
 }

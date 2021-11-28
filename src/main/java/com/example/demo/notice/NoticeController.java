@@ -64,4 +64,10 @@ public class NoticeController {
 		return "redirect:./select?num="+noticeVO.getNum();
 	}
 	
+	//글 삭제하기
+	public String setDelete(NoticeVO noticeVO) throws Exception {
+		int result = noticeService.setDelete(noticeVO);
+		return "redirect:../board/list";
+	}
+	
 }

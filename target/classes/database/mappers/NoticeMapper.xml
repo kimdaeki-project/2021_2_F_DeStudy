@@ -21,5 +21,9 @@
   		update destudynotice set title=#{title}, contents=#{contents}
   		where num=#{num}
   	</update>
+  	
+  	<delete id="setDelete" parameterType="NoticeVO">
+  		delete from destudynotice where num=#{num}
+  	</delete>
   </mapper>
   

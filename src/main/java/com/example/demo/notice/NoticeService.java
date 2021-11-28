@@ -33,4 +33,9 @@ public class NoticeService {
 	public int setUpdate(NoticeVO noticeVO) throws Exception {
 		return noticeRepository.setUpdate(noticeVO);
 	}
+	
+	//글 삭제하기
+	public int setDelete(NoticeVO noticeVO) throws Exception {
+		return noticeRepository.setDelete(noticeVO);
+	}
 }
