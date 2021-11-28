@@ -16,6 +16,20 @@
 		<div id="wrap">
 			<section id="main">
 				<section id="maintitle">공지사항</section>
+				
+<!-- 					검색
+					<form action="./list" id="frm">
+						<input type="hidden" name="pn" value="1" id="pn">
+						<select name="kind" id="kind">
+							<option class="s" value="title">제목</option>
+							<option class="s" value="contents">내용</option>
+							<option class="s" value="writer">작성자</option>
+						</select>
+						<input type="text" name="search" id="serach">
+						<button type="submit" id="btn">검색</button>
+					</form>
+					 -->
+					
 					<table class="table">
 					  <thead>
 					    <tr id="sector">
@@ -40,8 +54,20 @@
 					</table>
 					<a href="./insert" id="writing">글쓰기</a>
 			</section>
+			<section id="paging">
+				<button class="p" data-list-pn="${pager.startNum-1}" type="button">이전</button>
+				
+				<c:forEach begin="${pager.startNum}" end="${pager.lastNum}" var="i">
+					<span class="p" data-list-pn="${i}">${i}</span>
+				</c:forEach>
+				
+				<c:if test="${!pager.lastCheck}">
+					<button class="p" data-list-pn="${pager.lastNum+1}" type="button">다음</button>
+				</c:if>
+			</section>
 		</div>
 		<div class="block"></div>
 		<%@ include file="../common/footer.jsp"%>
+		<script type="text/javascript" src="/js/list.js"></script>
 	</body>
 </html>

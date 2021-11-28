@@ -25,13 +25,13 @@ public class NoticeController {
 	//글 목록 조회 + 페이징
 	@GetMapping("list")
 	public ModelAndView getList(Pager pager, ModelAndView mv, NoticeVO noticeVO) throws Exception{
-//		List<NoticeVO> list = noticeService.getList(noticeVO);
 		List<NoticeVO> ar = noticeService.getList(pager);
-//		mv.addObject("noticeList", list);
 		mv.addObject("noticeList", ar);
 		mv.addObject("pager", pager);
 		mv.setViewName("board/list");
 		return mv;
+//		List<NoticeVO> list = noticeService.getList(noticeVO);
+//		mv.addObject("noticeList", list);
 	}
 	
 	//글 조회

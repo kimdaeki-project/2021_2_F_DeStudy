@@ -8,9 +8,9 @@
   		select * from destudynotice
   		where
   			<choose>
-  				<when test="kind == 'writer'">작성자</when>
-  				<when test="kind == 'contents'">내용</when>
-  				<otherwise>제목</otherwise>
+  				<when test="kind == 'writer'">writer</when>
+  				<when test="kind == 'contents'">contents</when>
+  				<otherwise>title</otherwise>
   			</choose>
   		like concat('%', #{search}, '%')
   		order by num desc
@@ -21,9 +21,9 @@
   		select count(num) from notice
   		where
   			<choose>
-  				<when test="kind == 'writer'">작성자</when>
-  				<when test="kind == 'contents'">내용</when>
-  				<otherwise>제목</otherwise>
+  				<when test="kind == 'writer'">writer</when>
+  				<when test="kind == 'contents'">contents</when>
+  				<otherwise>title</otherwise>
   			</choose>
   		like concat('%', #{search}, '%')
   	</select>
