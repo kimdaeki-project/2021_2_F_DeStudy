@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
+import com.example.demo.util.Pager;
+
 @Service
 public class NoticeService {
 	
@@ -13,9 +15,16 @@ public class NoticeService {
 	private NoticeRepository noticeRepository;
 
 	//글 목록 조회
-	public List<NoticeVO> getList(NoticeVO noticeVO) throws Exception{
-		List<NoticeVO> list = noticeRepository.getList(noticeVO);
-		return list;
+	public List<NoticeVO> getList(Pager pager) throws Exception{
+		pager.makeRow();
+		
+		Long totalCount = noticeRepository.getTotalCount(pager);
+		pager.makeNum(totalCount);
+		
+		return noticeRepository.getList(pager);
+		
+//		List<NoticeVO> list = noticeRepository.getList(noticeVO);
+//		return list;
 	};
 	
 	//글 조회

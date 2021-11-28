@@ -4,12 +4,17 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
+import com.example.demo.util.Pager;
+
 @Mapper
 public interface NoticeRepository{
 	
 	//글 목록 조회
-	public List<NoticeVO> getList(NoticeVO noticeVO) throws Exception;
+	public List<NoticeVO> getList(Pager pager) throws Exception;
 
+	//전체 글의 갯수
+	public Long getTotalCount(Pager pager) throws Exception;
+	
 	//글 조회
 	public NoticeVO getSelect(NoticeVO noticeVO) throws Exception;
 	

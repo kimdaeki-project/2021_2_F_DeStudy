@@ -2,8 +2,8 @@ package com.example.demo.util;
 
 public class Pager {
 
-	private String kind;
-	private String search;
+	private String kind; //컬럼
+	private String search; //검색어
 	
 	private Integer pageNum; //페이지번호
 	private Integer perPage; //한 페이지당 글의 갯수

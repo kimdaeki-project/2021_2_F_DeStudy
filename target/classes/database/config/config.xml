@@ -7,7 +7,8 @@
   	<typeAliases>
   		<typeAlias type="com.example.demo.member.MemberVO" alias="MemberVO"/>
 		<typeAlias type="com.example.demo.notice.NoticeVO" alias="NoticeVO"/>
-			
+		<typeAlias type="com.example.demo.util.Pager" alias="Pager"/>
+		
   		<typeAlias type="java.lang.Long" alias="Long"/>
   		<typeAlias type="java.util.List" alias="List"/>
   	</typeAliases>

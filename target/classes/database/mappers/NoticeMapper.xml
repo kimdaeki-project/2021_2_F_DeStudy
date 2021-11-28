@@ -4,10 +4,30 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
   <mapper namespace="com.example.demo.notice.NoticeRepository">
-  	<select id="getList" parameterType="NoticeVO" resultType="NoticeVO">
-  		select num, title, writer, hit, date from destudynotice
+  	<select id="getList" parameterType="Pager" resultType="NoticeVO">
+  		select * from destudynotice
+  		where
+  			<choose>
+  				<when test="kind == 'writer'">작성자</when>
+  				<when test="kind == 'contents'">내용</when>
+  				<otherwise>제목</otherwise>
+  			</choose>
+  		like concat('%', #{search}, '%')
+  		order by num desc
+  		limit #{startRow}, #{perPage}
   	</select>
   	
+  	<select id="getTotalCount" parameterType="Pager" resultType="Long">
+  		select count(num) from notice
+  		where
+  			<choose>
+  				<when test="kind == 'writer'">작성자</when>
+  				<when test="kind == 'contents'">내용</when>
+  				<otherwise>제목</otherwise>
+  			</choose>
+  		like concat('%', #{search}, '%')
+  	</select>
+
   	<select id="getSelect" parameterType="NoticeVO" resultType="NoticeVO">
   		select * from destudynotice where num=#{num}
   	</select>
