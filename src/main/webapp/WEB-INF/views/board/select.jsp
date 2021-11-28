@@ -21,7 +21,7 @@
 					<a href="./list">돌아가기</a>
 					<div id="writing">
 						<a href="./update?num=${noticeVO.num}">수정</a>
-						<a href="">삭제</a>
+						<a href="./delete?num=${noticeVO.num}">삭제</a>
 					</div>
 					<div class="block"></div>
 			</section>

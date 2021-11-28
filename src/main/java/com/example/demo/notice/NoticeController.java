@@ -65,6 +65,7 @@ public class NoticeController {
 	}
 	
 	//글 삭제하기
+	@GetMapping("delete")
 	public String setDelete(NoticeVO noticeVO) throws Exception {
 		int result = noticeService.setDelete(noticeVO);
 		return "redirect:../board/list";
