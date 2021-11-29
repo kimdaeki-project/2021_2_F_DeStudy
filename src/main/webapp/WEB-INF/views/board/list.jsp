@@ -7,6 +7,7 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>공지사항 - 개발을 만나는 시간, 디공</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<c:import url="../temp/bootStrapCDN.jsp"></c:import>
 	<link rel="stylesheet" href="/css/list.css">
 	</head>
@@ -56,20 +57,17 @@
 			</section>
 			
 			<section id="paging">
-				<a href="./list?kind=${pager.kind}$search=${pager.search}&pageNum=${pager.startNum-1}">
-					<button class="p" type="button">이전</button>
-				</a>
-				
+				<button class="p" data-list-pn="${pager.startNum-1}" type="button">이전</button>
+							
 				<c:forEach begin="${pager.startNum}" end="${pager.lastNum}" var="i">
-					<a href="./list?kind=${pager.kind}&search=${pager.search}&pageNum=${i}">${i}</a>
+					<span class="p" data-list-pn="${i}" >${i}</span>
 				</c:forEach>
-				
+							
 				<c:if test="${!pager.lastCheck}">
-					<a href="./list?kind=${pager.kind}$search=${pager.search}&pageNum=${pager.lastNum+1}">
-						<button class="p" type="button">다음</button>
-					</a>
+					<button class="p" data-list-pn="${pager.lastNum+1}" type="button">다음</button>
 				</c:if>
 			</section>
+
 		</div>
 		<div class="block"></div>
 		<%@ include file="../common/footer.jsp"%>
