@@ -32,9 +32,9 @@
 							<li><a href="../member/login">로그인</a></li>
 						</c:otherwise>
 					</c:choose>
-						<li><a href="../board/suggestions">의견</a></li>
-						<li><a href="../board/list">공지사항</a></li>
-						<li><a href="../board/oneview">한눈에보기</a></li>
+						<li><a href="../qna/list">의견</a></li>
+						<li><a href="../notice/list">공지사항</a></li>
+						<li><a href="../common/oneview">한눈에보기</a></li>
 				</ul>
 				
 			</div>

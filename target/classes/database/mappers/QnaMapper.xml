@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.example.demo.qna.QnaRepository">
+	<select id="getList" parameterType="Pager" resultType="QnaVO">
+  		select * from destudyqna
+  		where
+  			<choose>
+  				<when test="kind == 'writer'">writer</when>
+  				<when test="kind == 'contents'">contents</when>
+  				<otherwise>title</otherwise>
+  			</choose>
+  		like concat('%', #{search}, '%')
+  		order by num desc
+  		limit #{startRow}, #{perPage}
+  	</select>
+  	
+  	<select id="getTotalCount" parameterType="Pager" resultType="Long">
+  		select count(num) from destudyqna
+  		where
+  			<choose>
+  				<when test="kind == 'writer'">writer</when>
+  				<when test="kind == 'contents'">contents</when>
+  				<otherwise>title</otherwise>
+  			</choose>
+  		like concat('%', #{search}, '%')
+  	</select>
+  	
+  	<select id="getSelect" parameterType="QnaVO" resultType="QnaVO">
+  		select * from destudyqna where num=#{num}
+  	</select>
+  	
+  	 <update id="pageView">
+  		update destudyqna set hit = hit + 1
+  		where id = #{id}
+  	</update>
+  	
+  	<insert id="setInsert" parameterType="QnaVO" useGeneratedKeys="true" keyProperty="num">
+  		insert into destudyqna (num, title, contents, writer, hit, date)
+  		values (#{num}, #{title}, #{contents}, #{writer}, 0, now())
+  	</insert>
+  	
+  	<update id="setUpdate" parameterType="QnaVO">
+  		update destudyqna set title=#{title}, contents=#{contents}
+  		where num=#{num}
+  	</update>
+  	
+  	<delete id="setDelete" parameterType="QnaVO">
+  		delete from destudyqna where num=#{num}
+  	</delete>
+</mapper>

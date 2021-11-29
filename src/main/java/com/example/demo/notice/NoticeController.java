@@ -15,7 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.example.demo.util.Pager;
 
 @Controller
-@RequestMapping("/board/**")
+@RequestMapping("/notice/**")
 public class NoticeController {
 	
 	//객체주입
@@ -28,7 +28,7 @@ public class NoticeController {
 		List<NoticeVO> ar = noticeService.getList(pager);
 		mv.addObject("noticeList", ar);
 		mv.addObject("pager", pager);
-		mv.setViewName("board/list");
+		mv.setViewName("notice/list");
 		return mv;
 //		List<NoticeVO> list = noticeService.getList(noticeVO);
 //		mv.addObject("noticeList", list);
@@ -38,7 +38,7 @@ public class NoticeController {
 	@GetMapping("select")
 	public ModelAndView getSelect(ModelAndView mv, NoticeVO noticeVO) throws Exception{
 		noticeVO = noticeService.getSelect(noticeVO);
-		mv.setViewName("board/select");
+		mv.setViewName("notice/select");
 		mv.addObject("noticeVO", noticeVO);
 
 		return mv;
@@ -47,13 +47,13 @@ public class NoticeController {
 	//글쓰기
 	@GetMapping("insert")
 	public String setInsert(@ModelAttribute NoticeVO noticeVO) throws Exception {
-		return "board/insert";
+		return "notice/insert";
 	}
 	
 	@PostMapping("insert")
 	public String setInsert(NoticeVO noticeVO, BindingResult bindingResult) throws Exception{
 		int result = noticeService.setInsert(noticeVO);
-		return "redirect:../board/list";
+		return "redirect:../notice/list";
 	}
 	
 	//글 수정하기
@@ -61,7 +61,7 @@ public class NoticeController {
 	public String setUpdate(NoticeVO noticeVO, Model model) throws Exception {
 		noticeVO = noticeService.getSelect(noticeVO);
 		model.addAttribute("noticeVO", noticeVO);
-		return "board/update";
+		return "notice/update";
 	}
 	
 	@PostMapping("update")
@@ -74,7 +74,7 @@ public class NoticeController {
 	@GetMapping("delete")
 	public String setDelete(NoticeVO noticeVO) throws Exception {
 		int result = noticeService.setDelete(noticeVO);
-		return "redirect:../board/list";
+		return "redirect:../notice/list";
 	}
 	
 }
