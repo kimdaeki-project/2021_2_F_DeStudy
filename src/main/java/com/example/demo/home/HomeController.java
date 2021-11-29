@@ -28,4 +28,9 @@ public class HomeController {
 	public String ch3() {
 		return "common/ch3";
 	}
+	
+	@GetMapping("oneview")
+	public String oneview() {
+		return "common/oneview";
+	}
 }
