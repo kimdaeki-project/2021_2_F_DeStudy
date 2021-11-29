@@ -27,10 +27,15 @@
   			</choose>
   		like concat('%', #{search}, '%')
   	</select>
-	
+  	
   	<select id="getSelect" parameterType="NoticeVO" resultType="NoticeVO">
   		select * from destudynotice where num=#{num}
   	</select>
+  	
+  	 <update id="pageView">
+  		update destudynotice set hit = hit + 1
+  		where id = #{id}
+  	</update>
   	
   	<insert id="setInsert" parameterType="NoticeVO" useGeneratedKeys="true" keyProperty="num">
   		insert into destudynotice (num, title, contents, writer, hit, date)

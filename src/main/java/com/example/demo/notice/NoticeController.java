@@ -40,6 +40,7 @@ public class NoticeController {
 		noticeVO = noticeService.getSelect(noticeVO);
 		mv.setViewName("board/select");
 		mv.addObject("noticeVO", noticeVO);
+
 		return mv;
 	}
 	

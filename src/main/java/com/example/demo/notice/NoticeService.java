@@ -32,6 +32,11 @@ public class NoticeService {
 		return noticeRepository.getSelect(noticeVO);
 	}
 	
+	//조회수
+	public int pageView(int hit) throws Exception {
+		return noticeRepository.pageView(hit);
+	}
+	
 	//글쓰기
 	public int setInsert(NoticeVO noticeVO) throws Exception {
 		int result = noticeRepository.setInsert(noticeVO);
