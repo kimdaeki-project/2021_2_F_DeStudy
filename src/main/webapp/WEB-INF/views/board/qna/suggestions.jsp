@@ -8,7 +8,7 @@
 	</head>
 
 	<body>
-		<%@ include file="../common/header.jsp"%>
+		<%@ include file="../../common/header.jsp"%>
 		<caption>
 			<strong>추가의견</strong>
 			<p id="intro">
