@@ -35,7 +35,11 @@
 					  	<c:forEach items="${qnaList}" var="qnaVO">
 						    <tr>
 						      <th scope="row">${qnaVO.num}</th>
-						      <td><a href="./select?num=${qnaVO.num}">${qnaVO.title}</a></td>
+						      <td>
+						      <c:catch>
+						     	 <c:forEach begin="1" end="${qnaVO.depth}"> -- </c:forEach>
+						      </c:catch>
+						      <a href="./select?num=${qnaVO.num}">${qnaVO.title}</a></td>
 							  <td>${qnaVO.writer}</td>
 							  <td>${qnaVO.hit}</td>
 							  <td>${qnaVO.date}</td>
