@@ -28,7 +28,7 @@
 					    </tr>
 					  </thead>
 					  <tbody>
-					  	<c:forEach items="${noticeList}" var="qnaVO">
+					  	<c:forEach items="${noticeList}" var="noticeVO">
 						    <tr>
 						      <th scope="row">${noticeVO.num}</th>
 						      <td><a href="./select?num=${noticeVO.num}">${noticeVO.title}</a></td>
