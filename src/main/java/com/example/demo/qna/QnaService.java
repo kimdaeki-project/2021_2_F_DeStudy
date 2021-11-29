@@ -48,4 +48,10 @@ public class QnaService {
 	public int setDelete(QnaVO qnaVO) throws Exception {
 		return qnaRepository.setDelete(qnaVO);
 	}
+	
+	//답글
+	public int setReplyInsert(QnaVO qnaVO) throws Exception {
+		int result = qnaRepository.setReplyInsert(qnaVO);
+		return result;
+	}
 }

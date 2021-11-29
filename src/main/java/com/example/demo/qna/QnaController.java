@@ -73,4 +73,16 @@ public class QnaController {
 			int result = qnaService.setDelete(qnaVO);
 			return "redirect:../qna/list";
 		}
+		
+		//답글
+		@GetMapping("reply")
+		public String reply(@ModelAttribute QnaVO qnaVO) throws Exception{
+			return "qna/reply";
+		}
+		
+		@PostMapping("reply")
+		public String reply(QnaVO qnaVO, BindingResult bindingResult) throws Exception {
+			int result = qnaService.setReplyInsert(qnaVO);
+			return "redirect:../qna/list";
+		}
 }

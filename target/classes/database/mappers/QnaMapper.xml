@@ -50,4 +50,24 @@
   	<delete id="setDelete" parameterType="QnaVO">
   		delete from destudyqna where num=#{num}
   	</delete>
+  	
+  	<insert id="setReplyInsert" parameterType="QnaVO" useGeneratedKeys="true" keyProperty="num">
+  		insert into destudyqna (num, title, contents, writer, hit, date, ref, step, depth)
+  		values (null, #{title}, #{contents}, #{writer}, 0, now(),
+  		(select R.ref from (select * from destudyqna where num=#{num}) R),
+  		(select S.step+1 from (select * from destudyqna where num=#{num}) S),
+  		(select D.depth+1 from (select * from destudyqna where num=#{num}) D)
+  		)
+  	</insert>
+  	
+  	<update id="setReplyUpdate" parameterType="QnaVO">
+  		update destudyqna set step=step+1
+  		where ref=(select ref from destudyqna where num=#{num})
+  		and
+  		step > (select step from destudyqna where num=#{num})
+  	</update>
+  	
+  	<update id="setRefUpdate" parameterType="QnaVO">
+  		update destudyqna set ref=#{num} where num=#{num}
+  	</update>
 </mapper>

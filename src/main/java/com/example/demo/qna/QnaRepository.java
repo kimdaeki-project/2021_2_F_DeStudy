@@ -29,4 +29,9 @@ public interface QnaRepository {
 	
 	//글 삭제하기
 	public int setDelete(QnaVO qnaVO) throws Exception;
+	
+	//답글
+	public int setReplyInsert(QnaVO qnaVO)throws Exception;
+	public int setReplyUpdate(QnaVO qnaVO)throws Exception;
+	public int setRefUpdate(QnaVO qnaVO)throws Exception;
 }
