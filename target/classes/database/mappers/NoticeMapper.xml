@@ -27,7 +27,7 @@
   			</choose>
   		like concat('%', #{search}, '%')
   	</select>
-
+	
   	<select id="getSelect" parameterType="NoticeVO" resultType="NoticeVO">
   		select * from destudynotice where num=#{num}
   	</select>
