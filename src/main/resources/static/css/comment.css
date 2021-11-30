@@ -1,0 +1,6 @@
+@charset "EUC-KR";
+
+.contents {display: inline-block;}
+#comment {margin: 50px 0;}
+#commentcontents {width: 700px; height: 40px; margin: 10px auto;}
+.cbtn {display: inline-block; background-color: white; background-image: url("/images/write.png"); background-size: cover; border: 0; width: 40px; height: 40px; padding: 15px;}
