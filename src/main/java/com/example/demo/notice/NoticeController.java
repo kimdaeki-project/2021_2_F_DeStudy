@@ -10,8 +10,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.example.demo.comment.CommentService;
+import com.example.demo.comment.CommentVO;
 import com.example.demo.qna.QnaVO;
 import com.example.demo.util.Pager;
 
@@ -22,6 +25,9 @@ public class NoticeController {
 	//객체주입
 	@Autowired
 	private NoticeService noticeService;
+	
+	@Autowired
+	private CommentService commentService;
 	
 	//글 목록 조회 + 페이징
 	@GetMapping("list")
@@ -42,6 +48,10 @@ public class NoticeController {
 		mv.setViewName("notice/select");
 		mv.addObject("noticeVO", noticeVO);
 
+		//댓글 목록 조회
+		List<CommentVO> commentList = commentService.getComment(noticeVO.getNum());
+		mv.addObject("commentList", commentList);
+		
 		return mv;
 	}
 	
@@ -77,17 +87,4 @@ public class NoticeController {
 		int result = noticeService.setDelete(noticeVO);
 		return "redirect:../notice/list";
 	}
-	
-	//덧글
-	@GetMapping("comment")
-	public String reply(@ModelAttribute NoticeVO noticeVO) throws Exception{
-		return "notice/comment";
-	}
-	
-	@PostMapping("comment")
-	public String reply(NoticeVO noticeVO, BindingResult bindingResult) throws Exception {
-		int result = noticeService.setReplyInsert(noticeVO);
-		return "redirect:../notice/comment";
-	}
-	
 }

@@ -41,7 +41,6 @@ public class NoticeService {
 	//글쓰기
 	public int setInsert(NoticeVO noticeVO) throws Exception {
 		int result = noticeRepository.setInsert(noticeVO);
-		result = noticeRepository.setRefUpdate(noticeVO);
 		return result;
 	}
 	
@@ -53,12 +52,5 @@ public class NoticeService {
 	//글 삭제하기
 	public int setDelete(NoticeVO noticeVO) throws Exception {
 		return noticeRepository.setDelete(noticeVO);
-	}
-	
-	//댓글
-	public int setReplyInsert(NoticeVO noticeVO) throws Exception {
-		int result = noticeRepository.setReplyUpdate(noticeVO);
-		result = noticeRepository.setReplyInsert(noticeVO);
-		return result;
 	}
 }
