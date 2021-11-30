@@ -25,7 +25,7 @@
 					  <thead>
 					    <tr id="sector">
 					      <th scope="col">번호</th>
-					      <th scope="col">제목</th>
+					      <th scope="col" id="re">제목</th>
 					      <th scope="col">작성자</th>
 					      <th scope="col">조회수</th>
 					      <th scope="col">작성일</th>
@@ -35,9 +35,9 @@
 					  	<c:forEach items="${qnaList}" var="qnaVO">
 						    <tr>
 						      <th scope="row">${qnaVO.num}</th>
-						      <td>
+						      <td id="re">
 						      <c:catch>
-						     	 <c:forEach begin="1" end="${qnaVO.depth}"> -- </c:forEach>
+						     	 <c:forEach begin="1" end="${qnaVO.depth}">&nbsp;&nbsp;&nbsp;RE:</c:forEach>
 						      </c:catch>
 						      <a href="./select?num=${qnaVO.num}">${qnaVO.title}</a></td>
 							  <td>${qnaVO.writer}</td>

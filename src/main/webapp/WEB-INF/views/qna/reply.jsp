@@ -22,7 +22,7 @@
 			<div id="main">
 				<div class="block"></div>
 				<form:form modelAttribute="qnaVO" enctype="multipart/form-data">
-					<form:hidden path="num"/>
+					<form:hidden path="num"/> <!-- 부모글번호 -->
 					<div id="title">
 						<form:input path="title" id="title" placeholder="제목을 입력하세요" />
 					</div>
