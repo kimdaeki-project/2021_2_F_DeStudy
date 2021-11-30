@@ -50,5 +50,25 @@
   	<delete id="setDelete" parameterType="NoticeVO">
   		delete from destudynotice where num=#{num}
   	</delete>
+  	
+  	<insert id="setReplyInsert" parameterType="NoticeVO" useGeneratedKeys="true" keyProperty="num">
+		insert into destudynotice (num, title, contents, writer, hit, date, ref, step, depth)
+		values (null, #{title}, #{contents}, #{writer}, 0, now(),
+		(select R.ref from (select * from destudynotice where num=#{num}) R),
+		(select S.step+1 from (select * from destudynotice where num=#{num}) S),
+		(select D.depth+1 from (select * from destudynotice where num=#{num}) D)
+		)
+  	</insert>
+  	
+  	<update id="setReplyUpdate" parameterType="NoticeVO">
+  		update destudynotice set step=step+1
+  		where ref=(select R.ref from (select ref from destudynotice where num=#{num}) R)
+  		and
+  		step > (select S.step from (select step from destudynotice where num=#{num}) S)
+  	</update>
+  	
+  	<update id="setRefUpdate" parameterType="NoticeVO">
+  		update destudynotice set ref=#{num} where num=#{num}
+  	</update>
   </mapper>
   

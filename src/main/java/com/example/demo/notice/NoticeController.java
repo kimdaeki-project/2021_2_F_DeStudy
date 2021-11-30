@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.example.demo.qna.QnaVO;
 import com.example.demo.util.Pager;
 
 @Controller
@@ -75,6 +76,18 @@ public class NoticeController {
 	public String setDelete(NoticeVO noticeVO) throws Exception {
 		int result = noticeService.setDelete(noticeVO);
 		return "redirect:../notice/list";
+	}
+	
+	//덧글
+	@GetMapping("comment")
+	public String reply(@ModelAttribute NoticeVO noticeVO) throws Exception{
+		return "notice/comment";
+	}
+	
+	@PostMapping("comment")
+	public String reply(NoticeVO noticeVO, BindingResult bindingResult) throws Exception {
+		int result = noticeService.setReplyInsert(noticeVO);
+		return "redirect:../notice/comment";
 	}
 	
 }

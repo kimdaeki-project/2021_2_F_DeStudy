@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
+import com.example.demo.qna.QnaVO;
 import com.example.demo.util.Pager;
 
 @Mapper
@@ -29,4 +30,9 @@ public interface NoticeRepository{
 	
 	//글 삭제하기
 	public int setDelete(NoticeVO noticeVO) throws Exception;
+	
+	//댓글
+	public int setReplyInsert(NoticeVO noticeVO)throws Exception;
+	public int setReplyUpdate(NoticeVO noticeVO)throws Exception;
+	public int setRefUpdate(NoticeVO noticeVO)throws Exception;
 }
