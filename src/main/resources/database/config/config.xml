@@ -9,6 +9,7 @@
 		<typeAlias type="com.example.demo.notice.NoticeVO" alias="NoticeVO"/>
 		<typeAlias type="com.example.demo.qna.QnaVO" alias="QnaVO"/>
 		<typeAlias type="com.example.demo.util.Pager" alias="Pager"/>
+		<typeAlias type="com.example.demo.comment.CommentVO" alias="CommentVO"/>
 		
   		<typeAlias type="java.lang.Long" alias="Long"/>
   		<typeAlias type="java.util.List" alias="List"/>
