@@ -36,6 +36,7 @@ public class QnaService {
 	//글쓰기
 	public int setInsert(QnaVO qnaVO) throws Exception {
 		int result = qnaRepository.setInsert(qnaVO);
+		result = qnaRepository.setRefUpdate(qnaVO);
 		return result;
 	}
 	
@@ -51,7 +52,8 @@ public class QnaService {
 	
 	//답글
 	public int setReplyInsert(QnaVO qnaVO) throws Exception {
-		int result = qnaRepository.setReplyInsert(qnaVO);
+		int result = qnaRepository.setReplyUpdate(qnaVO);
+		result = qnaRepository.setReplyInsert(qnaVO);
 		return result;
 	}
 }

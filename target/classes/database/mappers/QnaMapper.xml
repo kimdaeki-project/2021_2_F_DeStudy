@@ -13,7 +13,7 @@
   				<otherwise>title</otherwise>
   			</choose>
   		like concat('%', #{search}, '%')
-  		order by num desc
+  		order by ref desc, step asc
   		limit #{startRow}, #{perPage}
   	</select>
   	
@@ -38,8 +38,8 @@
   	</update>
   	
   	<insert id="setInsert" parameterType="QnaVO" useGeneratedKeys="true" keyProperty="num">
-  		insert into destudyqna (num, title, contents, writer, hit, date)
-  		values (#{num}, #{title}, #{contents}, #{writer}, 0, now())
+  		insert into destudyqna (num, title, contents, writer, hit, date, ref, step, depth)
+  		values (#{num}, #{title}, #{contents}, #{writer}, 0, now(), #{num}, 0, 0)
   	</insert>
   	
   	<update id="setUpdate" parameterType="QnaVO">
@@ -62,9 +62,9 @@
   	
   	<update id="setReplyUpdate" parameterType="QnaVO">
   		update destudyqna set step=step+1
-  		where ref=(select ref from destudyqna where num=#{num})
+  		where ref=(select R.ref from (select ref from destudyqna where num=#{num}) R)
   		and
-  		step > (select step from destudyqna where num=#{num})
+  		step > (select S.step from (select step from destudyqna where num=#{num}) S)
   	</update>
   	
   	<update id="setRefUpdate" parameterType="QnaVO">
