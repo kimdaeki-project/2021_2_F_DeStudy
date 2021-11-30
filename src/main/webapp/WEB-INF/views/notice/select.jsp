@@ -25,7 +25,24 @@
 						<a href="./update?num=${noticeVO.num}">수정</a>
 						<a href="./delete?num=${noticeVO.num}">삭제</a>
 					</div>
-					<%@ include file="./comment.jsp"%>
+					<!-- 댓글 -->
+					<section id="comment">
+						댓글<br>
+						<form>
+							<input type="text" id="commentcontents">
+							<input type="image" class="cbtn" src="../images/write.png" alt="등록" width="40" height="40">
+						</form>
+						<ol class="commentList">
+							<c:forEach items="${commentList}" var="commentList">
+								<li>
+									<p>
+									${commentList.writer}<br>
+									${commentList.date}
+									</p>
+									<p>${commentList.contents}</p>
+								</li>
+							</c:forEach>
+						</ol>
 					</section>
 					<div class="block"></div>
 			</section>
