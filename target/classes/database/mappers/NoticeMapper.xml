@@ -28,14 +28,30 @@
   		like concat('%', #{search}, '%')
   	</select>
   	
-  	<select id="getSelect" parameterType="NoticeVO" resultType="NoticeVO">
-  		select * from destudynotice where num=#{num}
+  	<select id="getSelect" parameterType="NoticeVO" resultType="selectResult">
+  		select N.*, NF.* from
+  		destudynotice N left join destudynoticefiles NF
+  		on (N.num = NF.num)
+  		where N.num=#{num}
   	</select>
   	
-  	 <update id="pageView">
-  		update destudynotice set hit = hit + 1
-  		where id = #{id}
-  	</update>
+  	<resultMap type="NoticeVO" id="selectResult">
+		<id column="num" property="num"/>
+		<result column="title" property="title"/>
+		<result column="contents" property="contents"/>
+		<result column="writer" property="writer"/>
+		<result column="hit" property="hit"/>
+		<result column="date" property="date"/>
+		<collection property="fileList" javaType="List" ofType="NoticeFileVO">
+			<id column="fileNum" property="fileNum"/>
+			<result column="fileName" property="fileName"/>
+			<result column="oriName" property="oriName"/>
+		</collection>
+	</resultMap>
+	
+	<insert id="setFileInsert" parameterType="NoticeFileVO">
+		insert into destudynoticefiles values(null, #{num}, #{fileName}, #{oriName})
+	</insert>
   	
   	<insert id="setInsert" parameterType="NoticeVO" useGeneratedKeys="true" keyProperty="num">
   		insert into destudynotice (num, title, contents, writer, hit, date)
