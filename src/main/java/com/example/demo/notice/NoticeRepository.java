@@ -18,10 +18,7 @@ public interface NoticeRepository{
 	
 	//글 조회
 	public NoticeVO getSelect(NoticeVO noticeVO) throws Exception;
-	
-	//조회수
-	public int pageView(int hit);
-	
+
 	//글쓰기
 	public int setInsert(NoticeVO noticeVO) throws Exception;
 	
@@ -30,4 +27,7 @@ public interface NoticeRepository{
 	
 	//글 삭제하기
 	public int setDelete(NoticeVO noticeVO) throws Exception;
+	
+	//파일저장
+	public int setFileInsert(NoticeFileVO noticeFileVO) throws Exception;
 }

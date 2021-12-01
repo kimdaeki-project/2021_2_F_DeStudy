@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.example.demo.comment.CommentService;
@@ -62,8 +63,8 @@ public class NoticeController {
 	}
 	
 	@PostMapping("insert")
-	public String setInsert(NoticeVO noticeVO, BindingResult bindingResult) throws Exception{
-		int result = noticeService.setInsert(noticeVO);
+	public String setInsert(NoticeVO noticeVO, BindingResult bindingResult, MultipartFile [] files) throws Exception{
+		int result = noticeService.setInsert(noticeVO, files);
 		return "redirect:../notice/list";
 	}
 	
