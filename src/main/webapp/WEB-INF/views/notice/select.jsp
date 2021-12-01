@@ -19,7 +19,10 @@
 					<article id="title">${noticeVO.title}</article>
 					<article id="date">${noticeVO.date}</article>
 					<article id="contents">${noticeVO.contents}</article>
-				
+					<c:forEach items="${noticeVO.fileList}" var="fileVO">
+						<a href="../upload/notice/${fileVO.fileName}">${fileVO.oriName}</a><br>
+					</c:forEach>
+					<br>
 					<a href="./list">돌아가기</a>
 					<div id="writing">
 						<a href="./update?num=${noticeVO.num}">수정</a>
