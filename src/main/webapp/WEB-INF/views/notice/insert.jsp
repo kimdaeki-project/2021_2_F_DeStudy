@@ -21,7 +21,7 @@
 		<div id="wrap">
 			<div id="main">
 				<div class="block"></div>
-				<form:form modelAttribute="noticeVO">
+				<form:form modelAttribute="noticeVO" method="post" enctype="multipart/form-data">
 					<div id="title">
 						<form:input path="title" id="title" placeholder="제목을 입력하세요"/>
 					</div>
@@ -31,6 +31,11 @@
 					<div id="contents">
 						<!-- <label for="contents" class="contents">내용</label><br> -->
 						<form:input path="contents" id="summernote"/>
+					</div>
+					<br>
+					<div id="file">
+						<input type="file" name="files"><br>
+						<input type="file" name="files">
 					</div>
 					<button id="submit" type="submit" class="btn btn-secondary btn-lg">작성완료</button>
 				</form:form>

@@ -20,39 +20,39 @@ public class FileManager {
 	@Autowired
 	private ResourceLoader resourceLoader;
 	
-		//1. 경로
-		public String getUseClassPathResource(String filePath, MultipartFile multipartFile) throws Exception{
-			String path = "static";
-			ClassPathResource classPathResource = new ClassPathResource(path);
-			File file = new File(classPathResource.getFile(), filePath);
-			
-			if(!file.exists()) {
-				file.mkdir();
-			}
-		
-		//파일저장
-		//유니크한 이름 만들기
-		String fileName="";
-		fileName = UUID.randomUUID().toString()+"_"+multipartFile.getOriginalFilename();
-		file = new File(file, fileName);
-		multipartFile.transferTo(file);
-		return fileName;
-		}
-		
-		//2. ResourceLoader
-		public String getUserResourceLoader(String filePath, MultipartFile multipartFile) throws Exception{
-			String path = "classpath:/static";
-			File file = new File(resourceLoader.getResource(path).getFile(), filePath);
-			if(!file.exists()) {
-				file.mkdir();
-			}
-			
-			String fileName="";
-			fileName = UUID.randomUUID().toString()+"_"+multipartFile.getOriginalFilename();
-			file = new File(file, fileName);
-			multipartFile.transferTo(file);
-			return fileName;
-		}
+//		//1. 경로
+//		public String getUseClassPathResource(String filePath, MultipartFile multipartFile) throws Exception{
+//			String path = "static";
+//			ClassPathResource classPathResource = new ClassPathResource(path);
+//			File file = new File(classPathResource.getFile(), filePath);
+//			
+//			if(!file.exists()) {
+//				file.mkdir();
+//			}
+//		
+//		//파일저장
+//		//유니크한 이름 만들기
+//		String fileName="";
+//		fileName = UUID.randomUUID().toString()+"_"+multipartFile.getOriginalFilename();
+//		file = new File(file, fileName);
+//		multipartFile.transferTo(file);
+//		return fileName;
+//		}
+//		
+//		//2. ResourceLoader
+//		public String getUserResourceLoader(String filePath, MultipartFile multipartFile) throws Exception{
+//			String path = "classpath:/static";
+//			File file = new File(resourceLoader.getResource(path).getFile(), filePath);
+//			if(!file.exists()) {
+//				file.mkdir();
+//			}
+//			
+//			String fileName="";
+//			fileName = UUID.randomUUID().toString()+"_"+multipartFile.getOriginalFilename();
+//			file = new File(file, fileName);
+//			multipartFile.transferTo(file);
+//			return fileName;
+//		}
 		
 		//3. ServletContext 사용
 		public String getUseServletContext(String filePath, MultipartFile multipartFile) throws Exception{

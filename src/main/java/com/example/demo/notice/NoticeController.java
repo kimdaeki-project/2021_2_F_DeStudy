@@ -63,7 +63,8 @@ public class NoticeController {
 	}
 	
 	@PostMapping("insert")
-	public String setInsert(NoticeVO noticeVO, BindingResult bindingResult, MultipartFile [] files) throws Exception{
+	public String setInsert(NoticeVO noticeVO, MultipartFile [] files) throws Exception{
+		System.out.println(files.length);
 		int result = noticeService.setInsert(noticeVO, files);
 		return "redirect:../notice/list";
 	}

@@ -20,8 +20,6 @@ public class NoticeService {
 	@Autowired
 	private FileManager fileManager;
 
-	@Autowired
-	private MultipartFile multipartFile;
 
 	//글 목록 조회
 	public List<NoticeVO> getList(Pager pager) throws Exception{
@@ -46,7 +44,7 @@ public class NoticeService {
 		int result = noticeRepository.setInsert(noticeVO);
 		
 		for(MultipartFile multipartFile:files) {
-			if(multipartFile.getSize()==0L)
+			if(multipartFile.getSize()==0L) {
 				continue;
 		}
 		
@@ -57,6 +55,7 @@ public class NoticeService {
 		noticeFileVO.setFileName(fileName);
 		noticeFileVO.setOriName(multipartFile.getOriginalFilename());
 		result = noticeRepository.setFileInsert(noticeFileVO);
+		}
 		return result;
 	}
 	

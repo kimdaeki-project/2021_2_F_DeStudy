@@ -1,6 +1,7 @@
 package com.example.demo.notice;
 
 import java.sql.Date;
+import java.util.List;
 
 public class NoticeVO {
 	private int num;
@@ -9,7 +10,15 @@ public class NoticeVO {
 	private String writer;
 	private int hit;
 	private Date date;
+	
+	private List<NoticeFileVO> fileList;
 
+	public List<NoticeFileVO> getFileList() {
+		return fileList;
+	}
+	public void setFileList(List<NoticeFileVO> fileList) {
+		this.fileList = fileList;
+	}
 	public int getNum() {
 		return num;
 	}

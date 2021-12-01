@@ -28,7 +28,7 @@
   		like concat('%', #{search}, '%')
   	</select>
   	
-  	<select id="getSelect" parameterType="NoticeVO" resultType="selectResult">
+  	<select id="getSelect" parameterType="NoticeVO" resultMap="selectResult">
   		select N.*, NF.* from
   		destudynotice N left join destudynoticefiles NF
   		on (N.num = NF.num)
