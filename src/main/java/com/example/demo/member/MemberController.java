@@ -27,8 +27,9 @@ public class MemberController {
 	
 	@PostMapping("login")
 	public String getSelectOne(MemberVO memberVO, HttpSession session) throws Exception{
+		System.out.println(memberVO);
 		memberVO = memberService.getSelectOne(memberVO);
-		//System.out.println(memberVO);
+		System.out.println(memberVO);
 		if(memberVO != null) {
 			session.setAttribute("member", memberVO);
 		}

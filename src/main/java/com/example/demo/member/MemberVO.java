@@ -5,7 +5,6 @@ public class MemberVO {
 	private String pw;
 	private String email;
 	private String cause;
-	
 	private String role;
 	
 	public String getRole() {

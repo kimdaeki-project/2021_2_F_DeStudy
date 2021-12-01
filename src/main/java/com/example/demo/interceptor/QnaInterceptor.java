@@ -7,12 +7,11 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
-import org.springframework.web.servlet.ModelAndView;
 
 import com.example.demo.member.MemberVO;
 
 @Component
-public class NoticeInterceptor implements HandlerInterceptor{
+public class QnaInterceptor implements HandlerInterceptor{
 
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
@@ -20,19 +19,15 @@ public class NoticeInterceptor implements HandlerInterceptor{
 		
 		HttpSession session = request.getSession();
 		MemberVO memberVO = (MemberVO)session.getAttribute("member");
-		
-		// 로그인 안됨
+
+		//로그인 안됨
 		if(memberVO == null) {
-			response.sendRedirect("/member/login");
+			request.setAttribute("message", "등록된 회원이 아닙니다.");
+			request.setAttribute("path", "/member/login");
+			RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/views/common/memberAccess.jsp");
+			view.forward(request, response);
 			return false;
-		// 로그인 되었으나 관리자가 아님
-		}else if(memberVO.getRole().equals("2")){
-				request.setAttribute("message", "접근권한이 없습니다.");
-				request.setAttribute("path", "/notice/list");
-				RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/views/common/adminAccess.jsp");
-				view.forward(request, response);
-				return false;
-		//관리자 확인됨
+		//로그인 되어있음
 		}else {
 			return true;
 		}
