@@ -5,6 +5,7 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>개발을 만나는 시간, 디공</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<style>
 	* {margin :0; padding: 0;}
 	html, body {width: 100%;}
@@ -15,8 +16,8 @@
 	#qbox {margin-top: 50px; display: inline-block;}
 	#abox {float: right; margin: 220px 50px 0 0;}
 	#stick {display: block; margin: 30px 0 0 0;}
-	button {margin: 20px 0 0 0; width: 250px; height: 60px; border-radius: 10px; border: 0; background-color: DarkSeaGreen; text-align: center; font-size: 20px;}
-	button:hover{cursor: pointer; color: #ffffff; background-color: #000000;}
+	.button {display: block; margin: 20px 0 0 0; width: 250px; height: 60px; border-radius: 10px; border: 0; background-color: DarkSeaGreen; text-align: center; font-size: 20px;}
+	.button:hover{cursor: pointer; color: #ffffff; background-color: #000000;}
 /* 	#paging {text-align: center; margin: 200px 0 5% 0;} */
 	</style>
 	</head>
@@ -33,15 +34,15 @@
 						2/3<progress value="60" max="90"></progress>
 					</section>
 				</section>
-				<section id="abox">
-					<button>초급</button>
-					<br><button>중급</button>
-					<br><button>상급</button>
-				</section>
+				<section id="abox"></section>
 <!-- 				<section id="paging">
 					<a href="ch1">이전</a>
 				</section> -->
 			</section>
+			<script type="text/javascript" src="/js/choice.js"></script>
+			<script type="text/javascript">
+				begin2();
+			</script>
 		</div>
 	</body>
 </html>
