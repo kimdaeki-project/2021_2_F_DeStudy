@@ -10,7 +10,7 @@
 	<script type="text/javascript">
 	function begin() {
 		$(".btn").click(function() {
-			location.href="choice";
+			location.href="ch1";
 		});
 	}
 	</script>

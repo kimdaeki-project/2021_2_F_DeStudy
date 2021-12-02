@@ -14,7 +14,7 @@
 	h1 {font-size: 4em;}
 	h3 {font-size: 3em;}
 	#qbox {margin-top: 50px; display: inline-block;}
-	#anbox {float: right; margin: 130px 50px 0 0;}
+	#abox {float: right; margin: 130px 50px 0 0;}
 	#stick {display: block; margin: 30px 0 0 0;}
 	button {margin: 20px 0 0 0; width: 250px; height: 60px; border-radius: 10px; border: 0; background-color: Linen; text-align: center; font-size: 20px;}
 	button:hover{cursor: pointer; color: #ffffff; background-color: #000000;}
@@ -33,7 +33,7 @@
 						1/3<progress value="30" max="90"></progress>
 					</section>
 				</section>
-				<section id="anbox">
+				<section id="abox">
 					<button>컴퓨터공학 기초</button>
 					<br><button>HTML/CSS</button>
 					<br><button>Javascript</button>
@@ -42,5 +42,7 @@
 				</section>
 			</section>
 		</div>
+		<script type="text/javascript">src="/js/data.js"</script>
+		<script type="text/javascript">src="/js/choice.js"</script>
 	</body>
 </html>

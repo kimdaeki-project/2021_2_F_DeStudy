@@ -13,7 +13,7 @@
 	h1 {font-size: 4em;}
 	h3 {font-size: 3em;}
 	#qbox {margin-top: 50px; display: inline-block;}
-	#anbox {float: right; margin: 220px 50px 0 0;}
+	#abox {float: right; margin: 220px 50px 0 0;}
 	#stick {display: block; margin: 30px 0 0 0;}
 	button {margin: 20px 0 0 0; width: 250px; height: 60px; border-radius: 10px; border: 0; background-color: Pink; text-align: center; font-size: 20px;}
 	button:hover{cursor: pointer; color: #ffffff; background-color: #000000;}
@@ -33,10 +33,10 @@
 						3/3<progress value="90" max="90"></progress>
 					</section>
 				</section>
-				<section id="anbox">
-					<button type="submit">기본서</button>
-					<br><button type="submit">온라인 강의</button>
-					<br><button type="submit">요약본</button>
+				<section id="abox">
+					<button>기본서</button>
+					<br><button>온라인 강의</button>
+					<br><butto>요약본</button>
 				</section>
 <!-- 				<section id="paging">
 					<a href="ch1">처음으로</a>
