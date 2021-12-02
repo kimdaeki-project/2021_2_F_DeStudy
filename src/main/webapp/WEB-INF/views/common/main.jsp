@@ -6,6 +6,14 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>메인 - 개발을 만나는 시간, 디공</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	function begin() {
+		$(".btn").click(function() {
+			location.href="choice";
+		});
+	}
+	</script>
 	<style>
 		html {height: 100%;}
 		body
@@ -33,7 +41,7 @@
 				개발학습의 모든 것<br>
 				디공에서 간편하게
 				</h3>
-				<a href="ch1"><button class="btn">시작하기</button></a>
+				<button class="btn" onClick="begin();">시작하기</button>
 			</section>
 		<%@ include file="footer.jsp"%>
 	</body>

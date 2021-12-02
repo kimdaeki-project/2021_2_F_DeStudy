@@ -5,6 +5,7 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>개발을 만나는 시간, 디공</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<style>
 	* {margin :0; padding: 0;}
 	html, body {width: 100%;}

@@ -14,9 +14,9 @@ public class HomeController {
 		return "common/main";
 	}
 	
-	@GetMapping("ch1")
+	@GetMapping("choice")
 	public String ch1() {
-		return "common/ch1";
+		return "common/choice";
 	}
 	
 	@GetMapping("ch2")
