@@ -16,8 +16,8 @@
 	#qbox {margin-top: 50px; display: inline-block;}
 	#abox {float: right; margin: 220px 50px 0 0;}
 	#stick {display: block; margin: 30px 0 0 0;}
-	.button {display: block; margin: 20px 0 0 0; width: 250px; height: 60px; border-radius: 10px; border: 0; background-color: DarkSeaGreen; text-align: center; font-size: 20px;}
-	.button:hover{cursor: pointer; color: #ffffff; background-color: #000000;}
+	button {display: block; margin: 20px 0 0 0; width: 250px; height: 60px; border-radius: 10px; border: 0; background-color: DarkSeaGreen; text-align: center; font-size: 20px;}
+	button:hover{cursor: pointer; color: #ffffff; background-color: #000000;}
 /* 	#paging {text-align: center; margin: 200px 0 5% 0;} */
 	</style>
 	</head>
