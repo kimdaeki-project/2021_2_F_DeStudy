@@ -1,4 +1,4 @@
-const answer1 = ['컴퓨터공학 기초', 'HTML/CSS', 'Javascript', 'Java', 'SQL']
+const answer1 = ['컴퓨터공학 기초', 'HTML/CSS', 'Javascript', 'Java']
 const answer2 = ['초급', '중상급']
 const answer3 = ['기본서', '온라인 강의']
 
@@ -56,7 +56,64 @@ function result() {
 	const r2= JSON.parse(localStorage.getItem('a2'));
 	const r3= JSON.parse(localStorage.getItem('a3'));
 	
-
+	const result = [r1.a1, r2.a2, r3.a3];
+	console.log(result);
+	const result1 = ['0', '0', '0'];
+	console.log(result1);
+	const result2 = ['0', '0', '1'];
+	const result3 = ['0', '1', '0'];
+	const result4 = ['0', '1', '1'];
+	const result5 = ['1', '0', '0'];
+	const result6 = ['1', '0', '1'];
+	const result7 = ['1', '1', '0'];
+	const result8 = ['1', '1', '1'];
+	const result9 = ['2', '0', '0'];
+	const result10 = ['2', '0', '1'];
+	const result11 = ['2', '1', '0'];
+	const result12 = ['2', '1', '1'];
+	const result13 = ['3', '0', '0'];
+	const result14 = ['3', '0', '1'];
+	const result15 = ['3', '1', '0'];
+	const result16 = ['3', '1', '1'];
+	
+	if(JSON.stringify(result) == JSON.stringify(result1)) {
+		//alert("collect!");
+		location.href="../result/basic_book";
+	}else if(JSON.stringify(result) == JSON.stringify(result2)){
+		location.href="../result/basic_lec";
+	}else if(JSON.stringify(result) == JSON.stringify(result3)){
+		location.href="";
+	}else if(JSON.stringify(result) == JSON.stringify(result4)){
+		location.href="";
+	}else if(JSON.stringify(result) == JSON.stringify(result5)){
+		location.href="";
+	}else if(JSON.stringify(result) == JSON.stringify(result6)){
+		location.href="";
+	}else if(JSON.stringify(result) == JSON.stringify(result7)){
+		location.href="";
+	}else if(JSON.stringify(result) == JSON.stringify(result8)){
+		location.href="";
+	}else if(JSON.stringify(result) == JSON.stringify(result9)){
+		location.href="";
+	}else if(JSON.stringify(result) == JSON.stringify(result10)){
+		location.href="";
+	}else if(JSON.stringify(result) == JSON.stringify(result11)){
+		location.href="";
+	}else if(JSON.stringify(result) == JSON.stringify(result12)){
+		location.href="";
+	}else if(JSON.stringify(result) == JSON.stringify(result13)){
+		location.href="";
+	}else if(JSON.stringify(result) == JSON.stringify(result14)){
+		location.href="";
+	}else if(JSON.stringify(result) == JSON.stringify(result15)){
+		location.href="";
+	}else if(JSON.stringify(result) == JSON.stringify(result16)){
+		location.href="";
+	}else {
+		return;
+	}
+	
+		
 	
 /*	if(r1.a1 ==0) {	
 		if(r2.a2 == 0) {
