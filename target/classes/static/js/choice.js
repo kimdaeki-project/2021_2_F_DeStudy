@@ -1,6 +1,6 @@
 const answer1 = ['컴퓨터공학 기초', 'HTML/CSS', 'Javascript', 'Java', 'SQL']
-const answer2 = ['초급', '중급', '고급']
-const answer3 = ['기본서', '온라인 강의', '요약본']
+const answer2 = ['초급', '중상급']
+const answer3 = ['기본서', '온라인 강의']
 
 //버튼에 텍스트 , 클래스명 추가
 function addButton(answerText, idx) {
@@ -31,24 +31,6 @@ function addButton(answerText, idx) {
 	})
 }
 
-//결과 출력 후 해당 페이지로 이동
-function result() {
-		const r1 = JSON.parse(localStorage.getItem('a1'));
-		const r2= JSON.parse(localStorage.getItem('a2'));
-		const r3= JSON.parse(localStorage.getItem('a3'));
-		//console.log(r1.a1);
-		
-		if(r1.a1 == 0) {
-			//alert("collect!");
-			if(r2.a2 == 0) {
-				if(r3.a3 == 0) {
-					location.href="../result/basic_book";
-					return;
-				}
-			}			
-		}
-	}
-
 //버튼 추가
 function begin1() {
 	for(let i=0;i<answer1.length;i++){
@@ -68,4 +50,51 @@ function begin3() {
 	}
 }
 
+//결과 출력 후 해당 페이지로 이동
+function result() {
+	const r1 = JSON.parse(localStorage.getItem('a1'));
+	const r2= JSON.parse(localStorage.getItem('a2'));
+	const r3= JSON.parse(localStorage.getItem('a3'));
+	
 
+	
+/*	if(r1.a1 ==0) {	
+		if(r2.a2 == 0) {
+			if(r3.a3 == 0) {
+				location.href="../result/basic_book";
+				return;
+			}else if(r3.a3 == 1){
+				location.href="";
+			}else {
+				location.href="";
+			}
+		}else if(r2.a2 == 1){
+			if(r3.a3 == 0) {
+				location.href="../result/basic_book";
+				return;
+			}else if(r3.a3 == 1){
+				location.href="";
+			}else {
+				location.href="";
+			}
+		}else {
+			if(r3.a3 == 0) {
+				location.href="../result/basic_book";
+				return;
+			}else if(r3.a3 == 1){
+				location.href="";
+			}else {
+				location.href="";
+			}
+		}			
+	}else if(r1.a1 == 1){
+		
+	}else if(r1.a1 == 2){
+		
+	}else if(r1.a1 == 3){
+		
+	}else {
+		
+	}
+}*/
+}
