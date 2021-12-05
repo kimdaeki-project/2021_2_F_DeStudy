@@ -2,6 +2,11 @@ package com.example.demo.notice;
 
 import java.util.List;
 
+import javax.servlet.RequestDispatcher;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Isolation;
@@ -18,6 +23,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.example.demo.comment.CommentService;
 import com.example.demo.comment.CommentVO;
+import com.example.demo.member.MemberVO;
 import com.example.demo.qna.QnaVO;
 import com.example.demo.util.Pager;
 
@@ -65,8 +71,10 @@ public class NoticeController {
 	}
 	
 	@PostMapping("insert")
-	public String setInsert(NoticeVO noticeVO, MultipartFile [] files) throws Exception{
-		System.out.println(files.length);
+	public String setInsert(NoticeVO noticeVO, MultipartFile [] files, HttpSession session) throws Exception{
+		//System.out.println(files.length);
+		MemberVO memberVO = (MemberVO)session.getAttribute("member");
+		noticeVO.setWriter(memberVO.getId());
 		int result = noticeService.setInsert(noticeVO, files);
 		return "redirect:../notice/list";
 	}

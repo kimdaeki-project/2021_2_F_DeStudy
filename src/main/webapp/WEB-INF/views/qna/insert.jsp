@@ -25,9 +25,9 @@
 					<div id="title">
 						<form:input path="title" id="title" placeholder="제목을 입력하세요"/>
 					</div>
-<%-- 					<div id="writer">
-						<form:input path="${qnaVO.writer}" id="writer" class="hidden"/>
-					</div> --%>
+					<div id="writer">
+						<form:input path="writer" id="writer" value="${qnaVO.writer}" type="hidden"/>
+					</div>
 					<div id="contents">
 						<!-- <label for="contents" class="contents">내용</label><br> -->
 						<form:input path="contents" id="summernote"/>

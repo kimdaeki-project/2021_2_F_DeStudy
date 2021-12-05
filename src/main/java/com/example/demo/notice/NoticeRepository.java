@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
+import com.example.demo.member.MemberVO;
 import com.example.demo.qna.QnaVO;
 import com.example.demo.util.Pager;
 

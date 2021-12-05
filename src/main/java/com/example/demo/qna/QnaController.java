@@ -2,6 +2,8 @@ package com.example.demo.qna;
 
 import java.util.List;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.example.demo.member.MemberVO;
 import com.example.demo.util.Pager;
 
 @Controller
@@ -48,7 +51,9 @@ public class QnaController {
 		}
 		
 		@PostMapping("insert")
-		public String setInsert(QnaVO qnaVO, BindingResult bindingResult) throws Exception{
+		public String setInsert(QnaVO qnaVO, BindingResult bindingResult, HttpSession session) throws Exception{
+			MemberVO memberVO = (MemberVO)session.getAttribute("member");
+			qnaVO.setWriter(memberVO.getId());
 			int result = qnaService.setInsert(qnaVO);
 			return "redirect:../qna/list";
 		}

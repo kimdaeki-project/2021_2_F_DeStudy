@@ -2,6 +2,8 @@ package com.example.demo.notice;
 
 import java.util.List;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
@@ -9,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.example.demo.member.MemberVO;
 import com.example.demo.qna.QnaVO;
 import com.example.demo.util.FileManager;
 import com.example.demo.util.Pager;

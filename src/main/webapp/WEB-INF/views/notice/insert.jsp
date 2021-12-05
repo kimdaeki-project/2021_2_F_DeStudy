@@ -1,3 +1,4 @@
+<%@page import="com.example.demo.member.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -25,11 +26,10 @@
 					<div id="title">
 						<form:input path="title" id="title" placeholder="제목을 입력하세요"/>
 					</div>
-<%-- 					<div id="writer">
-						<form:input path="${noticeVO.writer}" id="writer" class="hidden"/>
-					</div> --%>
+					<div id="writer">
+						<form:input path="writer" id="writer" value="${noticeVO.writer}" type="hidden"/>
+					</div>
 					<div id="contents">
-						<!-- <label for="contents" class="contents">내용</label><br> -->
 						<form:input path="contents" id="summernote"/>
 					</div>
 					<br>
