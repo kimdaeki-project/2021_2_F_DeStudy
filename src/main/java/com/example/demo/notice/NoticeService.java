@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -35,7 +37,9 @@ public class NoticeService {
 	};
 	
 	//글 조회
+	@Transactional(isolation = Isolation.READ_COMMITTED)
 	public NoticeVO getSelect(NoticeVO noticeVO) throws Exception {
+		noticeRepository.upHit(noticeVO);
 		return noticeRepository.getSelect(noticeVO);
 	}
 	

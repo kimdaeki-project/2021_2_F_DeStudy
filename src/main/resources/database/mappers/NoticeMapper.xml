@@ -35,6 +35,11 @@
   		where N.num=#{num}
   	</select>
   	
+  	<update id="upHit" parameterType="int">
+  		update destudynotice set hit = hit + 1
+  		where num=#{num}
+  	</update>
+  	
   	<resultMap type="NoticeVO" id="selectResult">
 		<id column="num" property="num"/>
 		<result column="title" property="title"/>
