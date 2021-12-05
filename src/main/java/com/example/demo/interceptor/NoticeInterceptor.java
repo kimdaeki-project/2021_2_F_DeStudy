@@ -21,12 +21,8 @@ public class NoticeInterceptor implements HandlerInterceptor{
 		HttpSession session = request.getSession();
 		MemberVO memberVO = (MemberVO)session.getAttribute("member");
 		
-		// 로그인 안됨
-		if(memberVO == null) {
-			response.sendRedirect("/member/login");
-			return false;
-		// 로그인 되었으나 관리자가 아님
-		}else if(memberVO.getRole().equals("2")){
+		// 로그인 안됨 or 로그인 되었으나 관리자가 아님
+		if(memberVO == null || memberVO.getRole().equals("2")){
 				request.setAttribute("message", "접근권한이 없습니다.");
 				request.setAttribute("path", "/notice/list");
 				RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/views/common/adminAccess.jsp");
