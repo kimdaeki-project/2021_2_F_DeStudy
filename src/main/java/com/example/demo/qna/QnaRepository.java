@@ -17,9 +17,7 @@ public interface QnaRepository {
 	
 	//글 조회
 	public QnaVO getSelect(QnaVO qnaVO) throws Exception;
-	
-	//조회수
-	public int pageView(int hit);
+	public int upHit(QnaVO qnaVO) throws Exception;
 	
 	//글쓰기
 	public int setInsert(QnaVO qnaVO) throws Exception;

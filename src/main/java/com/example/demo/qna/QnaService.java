@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.example.demo.util.Pager;
 
@@ -24,13 +26,10 @@ public class QnaService {
 	};
 	
 	//글 조회
+	@Transactional(isolation = Isolation.READ_COMMITTED)
 	public QnaVO getSelect(QnaVO qnaVO) throws Exception {
+		qnaRepository.upHit(qnaVO);
 		return qnaRepository.getSelect(qnaVO);
-	}
-	
-	//조회수
-	public int pageView(int hit) throws Exception {
-		return qnaRepository.pageView(hit);
 	}
 	
 	//글쓰기
