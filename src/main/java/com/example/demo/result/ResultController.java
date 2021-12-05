@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/result/**")
 public class ResultController {
 
-	@GetMapping("basic_book")
+	@GetMapping("0")
 	public String basicBook() {
-		return "result/basic_book";
+		return "result/0";
 	}
 	
 	@GetMapping("basic_lec")

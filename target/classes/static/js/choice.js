@@ -57,22 +57,33 @@ function result() {
 	const r3= JSON.parse(localStorage.getItem('a3'));
 	
 	const result = [r1.a1, r2.a2, r3.a3];;
-	const result1 = ['0', '0', '0'];
-	const result2 = ['0', '0', '1'];
-	const result3 = ['1', '0', '0'];
-	const result4 = ['1', '0', '1'];
-	const result5 = ['1', '1', '0'];
-	const result6 = ['1', '1', '1'];
-	const result7 = ['2', '0', '0'];
-	const result8 = ['2', '0', '1'];
-	const result9 = ['2', '1', '0'];
-	const result10 = ['2', '1', '1'];
-	const result11 = ['3', '0', '0'];
-	const result12 = ['3', '0', '1'];
-	const result13 = ['3', '1', '0'];
-	const result14 = ['3', '1', '1'];
+	const result0 = ['0', '0', '0'];
+	const result1 = ['0', '0', '1'];
+	const result2 = ['1', '0', '0'];
+	const result3 = ['1', '0', '1'];
+	const result4 = ['1', '1', '0'];
+	const result5 = ['1', '1', '1'];
+	const result6 = ['2', '0', '0'];
+	const result7 = ['2', '0', '1'];
+	const result8 = ['2', '1', '0'];
+	const result9 = ['2', '1', '1'];
+	const result10 = ['3', '0', '0'];
+	const result11 = ['3', '0', '1'];
+	const result12 = ['3', '1', '0'];
+	const result13 = ['3', '1', '1'];
 	
-	if(JSON.stringify(result) == JSON.stringify(result1)) {
+	
+	/*for(let i=0;i<17;i++){
+		let result = JSON.stringify(result);
+		let resultPage = JSON.stringify(result[i]);
+		if(result == resultPage) {
+			location.href = "../result/0";
+		}else {
+			alert("test");
+		}
+	}*/
+	
+	/*if(JSON.stringify(result) == JSON.stringify(result1)) {
 		//alert("collect!");
 		location.href="../result/basic_book";
 	}else if(JSON.stringify(result) == JSON.stringify(result2)){
@@ -104,7 +115,7 @@ function result() {
 	}else {
 		return;
 	}
-	
+	*/
 		
 	
 /*	if(r1.a1 ==0) {	
