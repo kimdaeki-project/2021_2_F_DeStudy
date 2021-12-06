@@ -14,17 +14,17 @@ function addButton(answerText, idx) {
 		let link = window.location.href;
 		if(link == "http://localhost:8080/common/ch1"){
 			choice = $(this).attr('class');
-			let a = {"a1" : choice};
+			const a = {"a1" : choice};
 			localStorage.setItem('a1', JSON.stringify(a));
 			location.href="ch2";
 		}else if(link == "http://localhost:8080/common/ch2"){
 			choice = $(this).attr('class');
-			let a = {"a2" : choice};
+			const a = {"a2" : choice};
 			localStorage.setItem('a2', JSON.stringify(a));
 			location.href="ch3";
 		}else {
 			choice = $(this).attr('class');
-			let a = {"a3" : choice};
+			const a = {"a3" : choice};
 			localStorage.setItem('a3', JSON.stringify(a));
 			result();
 		}
@@ -56,105 +56,31 @@ function result() {
 	const r2= JSON.parse(localStorage.getItem('a2'));
 	const r3= JSON.parse(localStorage.getItem('a3'));
 	
-	const result = [r1.a1, r2.a2, r3.a3];;
-	const result0 = ['0', '0', '0'];
-	const result1 = ['0', '0', '1'];
-	const result2 = ['1', '0', '0'];
-	const result3 = ['1', '0', '1'];
-	const result4 = ['1', '1', '0'];
-	const result5 = ['1', '1', '1'];
-	const result6 = ['2', '0', '0'];
-	const result7 = ['2', '0', '1'];
-	const result8 = ['2', '1', '0'];
-	const result9 = ['2', '1', '1'];
-	const result10 = ['3', '0', '0'];
-	const result11 = ['3', '0', '1'];
-	const result12 = ['3', '1', '0'];
-	const result13 = ['3', '1', '1'];
+	//선택된 결과
+	const result = [r1.a1, r2.a2, r3.a3];
 	
+	//존재하는 결과들 14개
+	const results = [
+		["0", "0", "0"],
+		["0", "0", "1"],
+		["1", "0", "0"],
+		["1", "0", "1"],
+		["1", "1", "0"],
+		["1", "1", "1"],
+		["2", "0", "0"],
+		["2", "0", "1"],
+		["2", "1", "0"],
+		["2", "1", "1"],
+		["3", "0", "0"],
+		["3", "0", "1"],
+		["3", "1", "0"],
+		["3", "1", "1"],
+	];
 	
-	/*for(let i=0;i<17;i++){
-		let result = JSON.stringify(result);
-		let resultPage = JSON.stringify(result[i]);
-		if(result == resultPage) {
-			location.href = "../result/0";
+	for(let i=0;i<14;i++){
+		if(JSON.stringify(result) == JSON.stringify(results[i])){
+			location.href="../result/"+i;
 		}else {
-			alert("test");
-		}
-	}*/
-	
-	/*if(JSON.stringify(result) == JSON.stringify(result1)) {
-		//alert("collect!");
-		location.href="../result/basic_book";
-	}else if(JSON.stringify(result) == JSON.stringify(result2)){
-		location.href="../result/basic_lec";
-	}else if(JSON.stringify(result) == JSON.stringify(result3)){
-		location.href="../result/hc_1_book";
-	}else if(JSON.stringify(result) == JSON.stringify(result4)){
-		location.href="../result/hc_1_lec";
-	}else if(JSON.stringify(result) == JSON.stringify(result5)){
-		location.href="";
-	}else if(JSON.stringify(result) == JSON.stringify(result6)){
-		location.href="";
-	}else if(JSON.stringify(result) == JSON.stringify(result7)){
-		location.href="";
-	}else if(JSON.stringify(result) == JSON.stringify(result8)){
-		location.href="";
-	}else if(JSON.stringify(result) == JSON.stringify(result9)){
-		location.href="";
-	}else if(JSON.stringify(result) == JSON.stringify(result10)){
-		location.href="";
-	}else if(JSON.stringify(result) == JSON.stringify(result11)){
-		location.href="";
-	}else if(JSON.stringify(result) == JSON.stringify(result12)){
-		location.href="";
-	}else if(JSON.stringify(result) == JSON.stringify(result13)){
-		location.href="";
-	}else if(JSON.stringify(result) == JSON.stringify(result14)){
-		location.href="";
-	}else {
-		return;
+		}	
 	}
-	*/
-		
-	
-/*	if(r1.a1 ==0) {	
-		if(r2.a2 == 0) {
-			if(r3.a3 == 0) {
-				location.href="../result/basic_book";
-				return;
-			}else if(r3.a3 == 1){
-				location.href="";
-			}else {
-				location.href="";
-			}
-		}else if(r2.a2 == 1){
-			if(r3.a3 == 0) {
-				location.href="../result/basic_book";
-				return;
-			}else if(r3.a3 == 1){
-				location.href="";
-			}else {
-				location.href="";
-			}
-		}else {
-			if(r3.a3 == 0) {
-				location.href="../result/basic_book";
-				return;
-			}else if(r3.a3 == 1){
-				location.href="";
-			}else {
-				location.href="";
-			}
-		}			
-	}else if(r1.a1 == 1){
-		
-	}else if(r1.a1 == 2){
-		
-	}else if(r1.a1 == 3){
-		
-	}else {
-		
-	}
-}*/
 }
