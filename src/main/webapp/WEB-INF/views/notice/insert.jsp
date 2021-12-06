@@ -30,7 +30,7 @@
 						<form:input path="writer" id="writer" value="${noticeVO.writer}" type="hidden"/>
 					</div>
 					<div id="contents">
-						<form:input path="contents" id="summernote"/>
+						<form:textarea path="contents" id="summernote"/>
 					</div>
 					<br>
 					<div id="file">

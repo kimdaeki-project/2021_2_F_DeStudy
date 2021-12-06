@@ -29,8 +29,7 @@
 						<form:input path="writer" id="writer" value="${qnaVO.writer}" type="hidden"/>
 					</div>
 					<div id="contents">
-						<!-- <label for="contents" class="contents">내용</label><br> -->
-						<form:input path="contents" id="summernote"/>
+						<form:textarea path="contents" id="summernote"/>
 					</div>
 					<button id="submit" type="submit" class="btn btn-secondary btn-lg">작성완료</button>
 				</form:form>
