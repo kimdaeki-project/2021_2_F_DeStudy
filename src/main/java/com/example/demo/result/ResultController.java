@@ -13,8 +13,23 @@ public class ResultController {
 		return "result/0";
 	}
 	
-	@GetMapping("basic_lec")
-	public String basicLec() {
-		return "result/basic_lec";
+	@GetMapping("1")
+	public String basiclec() {
+		return "result/1";
+	}
+	
+	@GetMapping("2")
+	public String hcbook1() {
+		return "result/2";
+	}
+	
+	@GetMapping("6")
+	public String jsbook1() {
+		return "result/6";
+	}
+	
+	@GetMapping("9")
+	public String jsbook2() {
+		return "result/9";
 	}
 }
