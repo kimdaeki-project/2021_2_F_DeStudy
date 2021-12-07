@@ -39,16 +39,9 @@
 							<img src="../images/모던자바입문.png" class="img2" alt="책사진">
 						</section>
 					</li>
-					<!-- <li>
-						<section>
-							<img src="../images/hc러닝스쿨.png" alt="책사진">
-							<article>
-								<h4>러닝스쿨! 한 권으로 끝내는 HTML + CSS 웹 디자인 입문</h4>
-								<p>HTML, CSS, 웹 디자인 기초를 다루고, 예제를 만들면서 배워본다. 웹 디자인에 대해 아무것도 몰라도 처음부터 차근차근 배울 수 있도록 HTML과 CSS 기초를 알려주며 반응형 웹, Flexbox, 그리드 등 최신 기술까지 익힐 수 있도록 도와준다.</p>
-								<a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=221767384" target="_blank">more ></a>
-							</article>
-						</section>
-					</li> -->
+					<li>
+						<p class="prepare">준비중</p>
+					</li>
 				</ul>
 			</div>
 		</div>

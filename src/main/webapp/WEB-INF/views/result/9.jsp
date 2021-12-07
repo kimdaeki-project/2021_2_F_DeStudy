@@ -14,38 +14,47 @@
 			<div id="titlebox">
 				<article id="title">
 					<h1>Javascript 중상급<h1>
-					<h3>기본서</h3>
+					<h3>온라인 강의</h3>
 				</article>
 			</div>
 			<div>
 				<ul id="list">
 					<li>
 						<section>
-							<img src="../images/모던자바deepdive.png" alt="책사진">
+							<a href="https://codingapple.com/course/javascript-es6/" target="_blank">
+								<img src="../images/codingapple.jpg" class="imglogo square" alt="로고사진">
+							</a>
 							<article>
-								<h4>모던 자바스크립트 Deep Dive</h4>
-								<p>자바스크립트를 둘러싼 기본 개념을 정확하고 구체적으로 설명하고, 자바스크립트 코드의 동작 원리를 집요하게 파헤친다. 작성한 코드가 컴퓨터 내부에서 어떻게 동작할 것인지 예측하고, 명확히 설명할 수 있도록 돕는다.</p>
-								<a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=251552545" target="_blank">more ></a>
+								<h4>코딩애플 - 매우쉽게 이해하는 JavaScript 객체지향 & ES6 신문법</h4>
+								<p>JavaScript ES6 추가 문법과 객체지향을 배울 수 있는 자바스크립트 심화과정입니다. (기초강의 아님 주의)<br><br>
+								강의내용 : this 키워드, Arrow function, var let const 변수와 전역객체 window, Destructuring으로 변수만들기, Template literals로 글자다루기, Object 등</p>
+								<a href="https://codingapple.com/course/javascript-es6/" target="_blank">more ></a>
 							</article>
 						</section>
 					</li>
 					<li>
 						<section>
 							<article>
-								<h4>인사이드 자바스크립트</h4>
-								<p>자바스크립트의 핵심 원리, 언어적 특성을 정확하고 알기 쉽게 설명하는 책. 국내 개발환경, 입문/초급 개발자 수준에 맞춰 그림과 rule을 통해 이해하기 쉽게 설명하고, jQuery 1.0 소스 분석을 통해서 실제 프로젝트에서 사용된 각종 자바스크립트의 핵심 개념을 설명한다.</p>
-								<a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=34486660" target="_blank">more ></a>
+								<h4>코드잇 - JavaScript 중급</h4>
+								<p>자바스크립트로 웹 페이지는 어떻게 다루는지, 성장의 핵심역할을 한 ES6+는 도대체 무엇인지, 대부분의 문법을 구성하는 '객체'는 어떻게 활용하면 좋을지, 자바스크립트의 무궁무진한 가능성을 이번 코스를 통해 확인해 보세요!<br><br>
+								강의내용 : 인터랙티브 자바스크립트, 모던 자바스크립트, 자바스크립트 객체 지향 기본기, 자바스크립트 웹 개발 기본기</p>
+								<a href="https://www.codeit.kr/courses/javascript-intermediate" target="_blank">more ></a>
 							</article>
-							<img src="../images/인사이드자바.png" alt="책사진">
+							<a href="https://www.codeit.kr/courses/javascript-intermediate" target="_blank">
+								<img src="../images/codeit.png" class="imglogo" alt="로고사진">
+							</a>
 						</section>
 					</li>
 					<li>
 						<section>
-							<img src="../images/코어자바.png" alt="책사진">
+							<a href="https://www.inflearn.com/course/%EC%8B%A4%EC%A0%84-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8#curriculum" target="_blank">
+								<img src="../images/inflearn.png" class="imglogo square" alt="로고사진">
+							</a>
 							<article>
-								<h4>코어 자바스크립트</h4>
-								<p>자바스크립트의 근간을 이루는 핵심 이론들을 정확하게 이해하는 것을 목표로 한다. 기본 이론들 중 ES6에서도 중요성이 높은 핵심 개념을 위주로 다루며, 테크닉이나 요령보다는 원리를 이해하는 데 목적을 두고 있다.</p>
-								<a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=206513031" target="_blank">more ></a>
+								<h4>인프런 - 실전 자바스크립트</h4>
+								<p>자바스크립트에 대한 깊이 있는 이해를 원하시는 분에게 적합한 강의입니다. 2020년 기준 자바스크립트 최신 문법을 다룹니다.<br><br>
+								강의내용 : var, const, let,  변수 스코프, 호이스팅, 부동소수점, Safe Integer, template literals, 문자열 메서드, logical  operators, Nullish coalescing 등</p>
+								<a href="https://www.inflearn.com/course/%EC%8B%A4%EC%A0%84-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8#curriculum" target="_blank">more ></a>
 							</article>
 						</section>
 					</li>
