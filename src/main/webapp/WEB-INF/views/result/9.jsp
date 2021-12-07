@@ -5,24 +5,7 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>개발을 만나는 시간, 디공</title>
-	<style>
-		* {margin :0; padding: 0;}
-		html, body {width: 100%;}
-		a {text-decoration:none; color:black;}
-		ul {list-style-type: none;}
-		h1 {font-size: 3em;}
-		h3 {font-size: 2em; color: grey;}
-		h4 {font-size: 2em; display: inline-block;}
-		#wrap {border-top: 1px solid Gainsboro; width: 100%; height: 100%;}
-		#titlebox {border-bottom: 1px solid Gainsboro; width: 100%; height:220px;}
-		#title {width: 70%; height: 100%; box-sizing: border-box; padding: 50px 10%; margin: 0 auto; text-align: center;}
-		#list > li {border-bottom: 1px solid Gainsboro; width: 100%; height: 400px;}
- 		section {width: 60%; margin: 0 auto;}
- 		section > img {width: 300px; height: 360px; padding: 20px 0; vertical-align: top;}
- 		section > article {width: 65%; box-sizing: border-box; padding: 80px 0 0 20px; display: inline-block;}
-		h4 + p {font-size: 20px; box-sizing: border-box; padding: 20px 0;}
-		p + a {font-size: 20px; color: blue;}
-	</style>
+	<link rel="stylesheet" href="/css/results.css">
 	</head>
 	
 	<body>
