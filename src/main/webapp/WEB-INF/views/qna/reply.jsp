@@ -26,8 +26,11 @@
 					<div id="title">
 						<form:input path="title" id="title" placeholder="제목을 입력하세요" />
 					</div>
+					<div id="writer">
+						<form:input path="writer" id="writer" value="${qnaVO.writer}" type="hidden"/>
+					</div>
 					<div id="contents">
-						<form:input path="contents" id="summernote" />
+						<form:textarea path="contents" id="summernote" />
 					</div>
 					<button id="submit" type="submit" class="btn btn-secondary btn-lg">작성완료</button>
 				</form:form>

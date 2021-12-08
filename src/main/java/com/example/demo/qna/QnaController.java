@@ -86,7 +86,9 @@ public class QnaController {
 		}
 		
 		@PostMapping("reply")
-		public String reply(QnaVO qnaVO, BindingResult bindingResult) throws Exception {
+		public String reply(QnaVO qnaVO, BindingResult bindingResult, HttpSession session) throws Exception {
+			MemberVO memberVO = (MemberVO)session.getAttribute("member");
+			qnaVO.setWriter(memberVO.getId());
 			int result = qnaService.setReplyInsert(qnaVO);
 			return "redirect:../qna/list";
 		}
