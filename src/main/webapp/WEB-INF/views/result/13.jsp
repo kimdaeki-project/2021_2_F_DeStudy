@@ -34,15 +34,15 @@
 					</li>
 					<li>
 						<section>
-							<a href="https://www.inflearn.com/course/%EC%9E%90%EB%B0%94-%ED%81%B4%EB%9E%98%EC%8A%A4-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D#curriculum" target="_blank">
-								<img src="../images/inflearn.png" class="imglogo square" alt="로고사진">
-							</a>
 							<article>
 								<h4>인프런 - 자바 : 클래스의 이해와 객체지향 프로그래밍</h4>
-								<p>이 강좌를 통해 수강생은 자바 클래스를 좀 더 자세하게 이해하고 자연스러운 활용을 할 수 있게 될 것입니다. 이는 좀 더 객체지향적인 프로그래밍으로 연결됩니다.<br><br>
+								<p>이 강좌를 통해 수강생은 자바 클래스를 좀 더 자세하게 이해하고 자연스러운 활용을 할 수 있게 될 것입니다.<br><br>
 								강의내용 : 클래스의 이해 기초, 상속과 활용, 클래스 활용</p>
 								<a href="https://www.inflearn.com/course/%EC%9E%90%EB%B0%94-%ED%81%B4%EB%9E%98%EC%8A%A4-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D#curriculum" target="_blank">more ></a>
 							</article>
+							<a href="https://www.inflearn.com/course/%EC%9E%90%EB%B0%94-%ED%81%B4%EB%9E%98%EC%8A%A4-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D#curriculum" target="_blank">
+								<img src="../images/inflearn.png" class="imglogo square" alt="로고사진">
+							</a>
 						</section>
 					</li>
 					<li>

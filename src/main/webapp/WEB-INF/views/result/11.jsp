@@ -27,7 +27,7 @@
 							<article>
 								<h4>SEOUL-G 캠프 - 자바-JSP-Spring 강좌</h4>
 								<p>신입SW인력을 위한 실전 자바 동영상과정<br><br>
-								강의내용 : 프로그래밍 기본, 자바, JSP, Spring</p>
+								강의내용 : 프로그래밍 기본, 자바 프로그래밍, 객체지향 프로그래밍, 클래스, 패키지, 접근 제한, static, 상속, 추상클래스, 인터페이스, 패턴 예제, Servlet, JSP, Spring</p>
 								<a href="https://youtu.be/MD3YGrofnDY" target="_blank">more ></a>
 							</article>
 						</section>

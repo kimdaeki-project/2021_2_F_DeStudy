@@ -25,9 +25,9 @@
 								<img src="../images/codingapple.jpg" class="imglogo square" alt="로고사진">
 							</a>
 							<article>
-								<h4>코딩애플 - 매우쉽게 이해하는 JavaScript 객체지향 & ES6 신문법</h4>
+								<h4>코딩애플 - JavaScript 객체지향&ES6 신문법</h4>
 								<p>JavaScript ES6 추가 문법과 객체지향을 배울 수 있는 자바스크립트 심화과정입니다. (기초강의 아님 주의)<br><br>
-								강의내용 : this 키워드, Arrow function, var let const 변수와 전역객체 window, Destructuring으로 변수만들기, Template literals로 글자다루기, Object 등</p>
+								강의내용 : this 키워드, Arrow function, var let const 변수와 전역객체 window, Destructuring으로 변수만들기 등</p>
 								<a href="https://codingapple.com/course/javascript-es6/" target="_blank">more ></a>
 							</article>
 						</section>
@@ -53,7 +53,7 @@
 							<article>
 								<h4>인프런 - 실전 자바스크립트</h4>
 								<p>자바스크립트에 대한 깊이 있는 이해를 원하시는 분에게 적합한 강의입니다. 2020년 기준 자바스크립트 최신 문법을 다룹니다.<br><br>
-								강의내용 : var, const, let,  변수 스코프, 호이스팅, 부동소수점, Safe Integer, template literals, 문자열 메서드, logical  operators, Nullish coalescing 등</p>
+								강의내용 : var, const, let,  변수 스코프, 호이스팅, 부동소수점, Safe Integer, template literals, 문자열 메서드 등</p>
 								<a href="https://www.inflearn.com/course/%EC%8B%A4%EC%A0%84-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8#curriculum" target="_blank">more ></a>
 							</article>
 						</section>

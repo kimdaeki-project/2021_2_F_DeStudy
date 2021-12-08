@@ -36,7 +36,7 @@
 						<section>
 							<article>
 								<h4>부스트코스 -웹 UI 개발</h4>
-								<p>HTML, CSS, 웹 접근성의 단계별 교육으로 실무에서 사용하는 다양한 UI 개발을 이해하고 제작할 수 있습니다.<br><br>
+								<p>네이버 계열사 N Tech Service의 개발자들과 함께 개발한 강의입니다. HTML, CSS, 웹 접근성의 단계별 교육으로 실무에서 사용하는 다양한 UI 개발을 이해하고 제작할 수 있습니다.<br><br>
 								강의내용 : HTML&CSS 기초, 웹 접근성, 배열, 참고학습</p>
 								<a href="https://www.boostcourse.org/web344" target="_blank">more ></a>
 							</article>
