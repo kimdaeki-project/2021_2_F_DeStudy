@@ -22,18 +22,14 @@ h6 {font-size: 1.5em;}
 .ready {color: Gainsboro; pointer-events: none;}
 #hidbtn {visibility: hidden;}
 
-.bbwrap {width: 75%; height: 500px; margin: 70px auto;}
-#bbtitle {width: 75%; height: 60px; margin: 15px 0;}
-#bbtitle span {color: Bisque;}
-.bblist > li {display: inline-block;}
+.wrap {width: 75%; height: 500px; margin: 70px auto;}
+.title {width: 75%; height: 60px; margin: 15px 0;}
+span {color: Bisque;}
+ul > li {display: inline-block;}
 .button {width: 300px; height: 400px; background-color: white; border-radius: 20px; border: 1px Bisque solid; font-size: 10px; box-sizing: border-box; margin: 0 10px; vertical-align: top; position: relative;}
-.more {width: 200px; height: 200px; left: 50px; text-align: center; vertical-align: middle; position: absolute; z-index: 2; font-size: 10px;}
+.more {width: 200px; height: 200px; left: 50px; top: 180px; text-align: center; vertical-align: middle; position: absolute; z-index: 2; font-size: 10px;}
 .more > a {font-weight: bold;}
 .opacity{opacity: 0.2;}
 .hidden {display: none;}
-.bblist h6 {position: absolute; z-index: 1; bottom: 40px; right: 10px; left: 10px;}
-.bblist img {position: absolute; z-index: 1; top: 35px; left: 25px;}
-
-.blwrap {width: 75%; height: 300px; margin: 70px auto;}
-#bltitle {width: 75%; height: 60px; margin: 15px 0;}
-#bltitle span {color: Bisque;}
+ul > h6 {position: absolute; z-index: 1; bottom: 40px; right: 10px; left: 10px;}
+ul > img {position: absolute; z-index: 1; top: 35px; left: 25px;}
