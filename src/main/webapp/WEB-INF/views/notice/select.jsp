@@ -28,7 +28,7 @@
 						<a href="./update?num=${noticeVO.num}">수정</a>
 						<a href="./delete?num=${noticeVO.num}">삭제</a>
 					</div>
-					<!-- 댓글 -->
+					<%-- <!-- 댓글 -->
 					<section id="comment">
 						댓글<br>
 						<form>
@@ -46,7 +46,7 @@
 								</li>
 							</c:forEach>
 						</ol>
-					</section>
+					</section> --%>
 					<div class="block"></div>
 			</section>
 		</div>
