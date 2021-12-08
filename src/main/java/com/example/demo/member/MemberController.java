@@ -62,7 +62,7 @@ public class MemberController {
 	@GetMapping("idCheck")
 	public int overlappedID(MemberVO memberVO) throws Exception{
 		int result = memberService.overlappedID(memberVO);
-		System.out.println(result);
+		//System.out.println(result);
 		return result;
 	}
 }
